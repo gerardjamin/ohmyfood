@@ -48,4 +48,11 @@ html, body {
   background-color: #99E2D0;
 }
 
+h1 {
+  margin-top: 5vh;
+  margin: auto;
+  font-family: "Shrikhand", cursive;
+  color: #FF79DA;
+}
+
 /*# sourceMappingURL=styles.css.map */
