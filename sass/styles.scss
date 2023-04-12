@@ -1,0 +1,21 @@
+@import "./libs/reset.scss";
+
+//variables
+$Primaire: #9356DC;
+$Secondaire: #FF79DA;
+$Tertiaire: #99E2D0;
+
+/*creation des mixins */
+@mixin Roboto {
+    font-family: 'Roboto', sans-serif;
+}
+//@include Roboto;
+
+@mixin Shrikhand {
+    font-family: 'Shrikhand', cursive;
+}
+//@include Shrikhand;
+
+html,body {
+    background-color: $Tertiaire ;
+}
