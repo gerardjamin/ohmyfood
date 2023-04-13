@@ -1,14 +1,10 @@
 @import "./Base/reset.scss";
 @import "./Utils/variables";
 @import "./Utils/mixins";
+@import "./Components/components";
 
 html,body {
-    background-color: $Tertiaire ;
+    max-width: 375px;
+    margin:auto;
 }
 
-h1 {
-    margin-top: 5vh;
-    margin:auto;
-    @include Shrikhand;
-    color: $Secondaire;
-}
