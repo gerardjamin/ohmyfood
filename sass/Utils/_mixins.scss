@@ -1,0 +1,11 @@
+//creation des mixins 
+@mixin Roboto {
+    font-family: 'Roboto', sans-serif;
+}
+//@include Roboto;
+
+
+@mixin Shrikhand {
+    font-family: 'Shrikhand', cursive;
+}
+//@include Shrikhand;
