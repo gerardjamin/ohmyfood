@@ -1,14 +1,14 @@
 .header {
     display: flex;
     flex-direction: column;
-    width:100%;
+    width: 100%;
 
     & .localisation {
-        display:flex;
+        display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap:17px;
+        gap: 17px;
         @include Roboto;
         font-style: normal;
         font-weight: 500;
@@ -17,12 +17,12 @@
         color: #353535;
         background: #EAEAEA;
         margin-top: 5px;
-        width:100%;
-        height:50px;
+        width: 100%;
+        height: 50px;
     }
 
     & .logo {
-        width:100%;
+        width: 100%;
         height: 44px;
         margin-top: 14px;
         text-align: center;
@@ -30,20 +30,55 @@
 
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 186px;
+    background: $background-black;
 
+    & .container .logo {
+        color: white;
+        @include Shrikhand;
+        margin-top: 22px;
+        margin-left: 25px;
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
 
+    & .footer-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        // color: white;
+        margin-left: 25px;
+        margin-bottom: 22px;
 
+        & a {
+            color:white;
+            text-decoration: none;
+        }
 
+    }
 
+    & .fa-solid {
+        margin-right: 10px;
+    }
 
-
-
-
-
-
-
-
-
-header-localisation {
-    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header-localisation {}
