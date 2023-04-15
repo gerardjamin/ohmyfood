@@ -1,17 +1,47 @@
 .exploration {
-    width:100%;
-    height:287px;
-    background:$background-grey;
+    width: 100%;
+    height: 287px;
+    background: $background-grey;
+    padding-top: 18px;
+
+    & h1 {
+        color: $background-black;
+        margin: auto;
+        text-align: center;
+        width: 275px;
+        height: 68px;
+        font-size: 24px;
+        @include Roboto;
+        font-weight: 700;
+    }
+
+    & h3 {
+        @include Roboto;
+        width: 315px;
+        height: 46px;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 27px;
+
+    }
+
+    & .button {
+        @include button($Primaire);
+        width: 218px;
+        height: 50px;
+        margin:auto;
+    }
 }
 
 .fonctionnement {
-    width:100%;
+    width: 100%;
     height: 440px;
 }
 
 .restaurants {
-    width:100%;
-    height:1226px;
+    width: 100%;
+    height: 1226px;
     background: $background-grey;
 }
-

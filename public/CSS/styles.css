@@ -47,6 +47,7 @@ td, th {
   display: flex;
   flex-direction: column;
   width: 100%;
+  background: #F7F7F7;
 }
 .header .localisation {
   display: flex;
@@ -61,15 +62,17 @@ td, th {
   line-height: 19px;
   color: #353535;
   background: #EAEAEA;
-  margin-top: 5px;
   width: 100%;
   height: 50px;
+  box-shadow: 0px 4px inset rgba(0, 0, 0, 0.03);
 }
 .header .logo {
   width: 100%;
   height: 44px;
   margin-top: 14px;
   text-align: center;
+  background: white;
+  padding-top: 10px;
 }
 
 .footer {
@@ -106,6 +109,49 @@ td, th {
   width: 100%;
   height: 287px;
   background: #F7F7F7;
+  padding-top: 18px;
+}
+.exploration h1 {
+  color: #353535;
+  margin: auto;
+  text-align: center;
+  width: 275px;
+  height: 68px;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.exploration h3 {
+  font-family: "Roboto", sans-serif;
+  width: 315px;
+  height: 46px;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 27px;
+}
+.exploration .button {
+  padding: 13px 18.75px 13px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 25px;
+  color: white;
+  background-color: rgb(104, 104, 104);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  width: 218px;
+  height: 50px;
+  margin: auto;
+}
+.exploration .button:hover {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+.exploration .button a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .fonctionnement {
