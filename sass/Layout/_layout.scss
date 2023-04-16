@@ -38,9 +38,14 @@
   width: 100%;
   height: 440px;
   padding: 2rem;
+  counter-reset: myindex;
 
   &__title {
+    @include Roboto;
+    font-size: 24px;
+    font-weight: 700;
     margin-top: 0;
+    margin-bottom: 26px;
   }
 
   &__list-ol {
@@ -58,27 +63,33 @@
     border-radius: 1.25rem;
     background-color: #f6f6f6;
     display: flex;
+    flex-direction: row;
     position: relative;
 
     &:first-child {
       margin-top: 0;
+      font-size: 16px;
+      font-weight: 500;
     }
 
     &:last-child {
       margin-bottom: 0;
     }
 
-    &::before {
-      counter-increment: compteListe 1;
-      content: counter(compteListe) " ";
+    &::after {
+      counter-increment: myindex;
+      content: counter(myindex);
+
       background: #9356dc;
-      height: 1.5rem;
-      width: 1.5rem;
+      height: 24px;
+      width: 24px;
       border-radius: 100px;
+
       display: flex;
       justify-content: center;
       align-items: center;
       color: white;
+
       position: absolute;
       left: -0.75rem;
     }
