@@ -208,7 +208,7 @@ td, th {
   background: #9356dc;
   height: 24px;
   width: 24px;
-  border-radius: 20px;
+  border-radius: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,10 +225,50 @@ td, th {
   color: #9356dc;
 }
 
-.restaurants {
+.restaurant {
   width: 100%;
   height: 1226px;
   background: #F7F7F7;
+  padding-top: 50px;
+}
+.restaurant__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 20px;
+  line-height: 28.13px;
+  margin-bottom: 20px;
+}
+.restaurant .card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.restaurant .restaurant__link {
+  text-decoration: none;
+}
+.restaurant .restaurant__cards {
+  position: relative;
+  background: white;
+  margin-bottom: 30px;
+  width: 340px;
+  margin: auto;
+  border-radius: 1rem 1rem 0 0;
+}
+.restaurant .restaurant__cards img {
+  height: 12rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+}
+.restaurant .card__new {
+  position: absolute;
+  top: 35px;
+  background-color: #99E2D0;
+  color: #1b6150;
+  border-radius: 0.125rem;
+  top: 1rem;
+  right: 0.75rem;
 }
 
 html, body {

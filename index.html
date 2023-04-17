@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--lien vers une feuille de style externe-->
-    <link rel="stylesheet" href="./public/CSS/styles.css" />
-    <!--Indication avec preconnect au serveur goggle-font que j'ai besoin de charger des ressources '. Ici chargement de la police Shrikhand via goggle font'-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
-    <!-- intégration des icones via FontAwesome-->
-    <script
-      src="https://kit.fontawesome.com/bd510b2bbe.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--ajouté un favicon et un titre dans l'onglet de la page HTML'-->
-    <link rel="icon" type="image/png" href="./images/logo/ohmyfood.png" />
-    <title>ohmyfood</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header-logo">
-        <img src="./images/logo/ohmyfood@2x.svg" alt="logo du site" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--lien vers une feuille de style externe-->
+  <link rel="stylesheet" href="./public/CSS/styles.css" />
+  <!--Indication avec preconnect au serveur goggle-font que j'ai besoin de charger des ressources '. Ici chargement de la police Shrikhand via goggle font'-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap"
+    rel="stylesheet" />
+  <!-- intégration des icones via FontAwesome-->
+  <script src="https://kit.fontawesome.com/bd510b2bbe.js" crossorigin="anonymous"></script>
+  <!--ajouté un favicon et un titre dans l'onglet de la page HTML'-->
+  <link rel="icon" type="image/png" href="./images/logo/ohmyfood.png" />
+  <title>ohmyfood</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <img src="./images/logo/ohmyfood@2x.svg" alt="logo du site" />
+    </div>
+    <div class="header-localisation">
+      <i class="fa-solid fa-location-dot"></i>
+      <p>Paris, Belleville</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="exploration">
+      <h1>Réservez le menu qui vous convient</h1>
+      <h3>
+        Découvrez des restaurants d'exeption, sélectionnés par nos soins.
+      </h3>
+      <div class="button">
+        <a class="exploration-button"> Explorer nos restaurants </a>
       </div>
-      <div class="header-localisation">
-        <i class="fa-solid fa-location-dot"></i>
-        <p>Paris, Belleville</p>
-      </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="exploration">
-        <h1>Réservez le menu qui vous convient</h1>
-        <h3>
-          Découvrez des restaurants d'exeption, sélectionnés par nos soins.
-        </h3>
-        <div class="button">
-          <a class="exploration-button"> Explorer nos restaurants </a>
-        </div>
-      </section>
-
-      <section class="fonctionnement">
-        <div class="container">
-          <h2 class="fonctionnement__title">Fonctionnement</h2>
+    <section class="fonctionnement">
+      <div class="container">
+        <h1 class="fonctionnement__title">Fonctionnement</h2>
 
           <ol class="fonctionnement__list-ol">
             <li class="fonctionnement__list-li">
@@ -63,34 +59,75 @@
               <h3 class="text-li">Dégustez au restaurant</h3>
             </li>
           </ol>
-        </div>
-      </section>
-
-      <section class="restaurants"></section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <p class="logo">ohmyfood</p>
       </div>
-      <ul class="footer-list">
-        <li>
-          <a href="#"
-            ><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a
-          >
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fa-solid fa-handshake"></i>Devenir partenaire</a
-          >
-        </li>
-        <li>
-          <a href="#">Mentions légales</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </footer>
-  </body>
+    </section>
+
+    <section class="restaurant">
+      <h1 class="restaurant__title">Restaurants</h1>
+
+      <article class="restaurant__article">
+        <div class="restaurant__cards">
+          <a class="restaurant__link" href="#">
+            <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image de la palette du goût">
+            <span class="card__new">Nouveau</span>
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card__title">La palette du goût</h3>
+                <h4 class="card__subtitle">Ménilmontant</h4>
+              </div>
+              <div class="menu__btn card__btn">
+                <i class="card__like menu__like menu__like--noBg far fa-heart fa-2x" aria-hidden="true"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="restaurant__cards">
+          <a class="restaurant__link" href="#">
+            <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image de la note enchantée">
+            <span class="card__new">Nouveau</span>
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card__title">La note enchantée</h3>
+                <h4 class="card__subtitle">Charonne</h4>
+              </div>
+              <div class="menu__btn card__btn">
+                <i class="card__like menu__like menu__like--bg fas fa-heart fa-2x" aria-hidden="true"></i>
+              </div>
+              <!-- <div class="card-rating">
+                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                <span class="sr-only">Note de 4 sur 5</span>
+            </div> -->
+            </div>
+          </a>
+        </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="logo">ohmyfood</p>
+    </div>
+    <ul class="footer-list">
+      <li>
+        <a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-handshake"></i>Devenir partenaire</a>
+      </li>
+      <li>
+        <a href="#">Mentions légales</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>
