@@ -132,23 +132,53 @@
   & .card-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    & .card-txt .card__title {
+      @include Roboto;
+      font-size: 18px;
+      font-weight: 700;
+      margin-left: 20px; 
+      margin-top: 10px;
+    }
+
+    & .card-txt .card__subtitle {
+      @include Roboto;
+      font-size: 17px;
+      font-weight: 300;
+      margin-left: 20px; 
+    }
+
+    & .card__heart {
+      padding-top: 1rem;
+      margin-right: 2rem;
+
+      & .fa-heart {
+        color:#9356dc;
+      }
+    }
   }
 
   & .restaurant__link {
     text-decoration: none;
   }
 
+  & .restaurant__article {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
   & .restaurant__cards {
     position: relative;
     background: white;
     margin-bottom: 30px;
     width: 340px;
+    height:250px;
     margin: auto;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem 1rem 1rem 1rem;
 
     & img {
-      height: 12rem;
+      height: 10rem;
       width: 100%;
       border-radius: 1rem 1rem 0 0;
       object-fit: cover;
@@ -163,6 +193,8 @@
     border-radius: 0.125rem;
     top: 1rem;
     right: 0.75rem;
+    width: 80px;
+    padding: 5px 5px;
 
     
   }

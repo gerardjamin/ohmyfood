@@ -56,6 +56,7 @@ td, th {
   align-items: center;
   gap: 17px;
   font-family: "Roboto", sans-serif;
+  color: black;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -120,10 +121,12 @@ td, th {
   height: 68px;
   font-size: 24px;
   font-family: "Roboto", sans-serif;
+  color: black;
   font-weight: 700;
 }
 .exploration h3 {
   font-family: "Roboto", sans-serif;
+  color: black;
   width: 315px;
   height: 46px;
   font-size: 18px;
@@ -165,6 +168,7 @@ td, th {
 }
 .fonctionnement__title {
   font-family: "Roboto", sans-serif;
+  color: black;
   font-size: 24px;
   font-weight: 700;
   margin-top: 15px;
@@ -189,16 +193,19 @@ td, th {
 }
 .fonctionnement__list-li:nth-child(1) {
   font-family: "Roboto", sans-serif;
+  color: black;
   font-size: 16px;
   font-weight: 500;
 }
 .fonctionnement__list-li:nth-child(2) {
   font-family: "Roboto", sans-serif;
+  color: black;
   font-size: 16px;
   font-weight: 500;
 }
 .fonctionnement__list-li:last-child {
   font-family: "Roboto", sans-serif;
+  color: black;
   font-size: 16px;
   font-weight: 500;
 }
@@ -233,6 +240,7 @@ td, th {
 }
 .restaurant__title {
   font-family: "Roboto", sans-serif;
+  color: black;
   font-size: 24px;
   font-weight: 700;
   margin-left: 20px;
@@ -242,21 +250,49 @@ td, th {
 .restaurant .card-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.restaurant .card-content .card-txt .card__title {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.restaurant .card-content .card-txt .card__subtitle {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 17px;
+  font-weight: 300;
+  margin-left: 20px;
+}
+.restaurant .card-content .card__heart {
+  padding-top: 1rem;
+  margin-right: 2rem;
+}
+.restaurant .card-content .card__heart .fa-heart {
+  color: #9356dc;
 }
 .restaurant .restaurant__link {
   text-decoration: none;
+}
+.restaurant .restaurant__article {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 .restaurant .restaurant__cards {
   position: relative;
   background: white;
   margin-bottom: 30px;
   width: 340px;
+  height: 250px;
   margin: auto;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 1rem 1rem;
 }
 .restaurant .restaurant__cards img {
-  height: 12rem;
+  height: 10rem;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
@@ -269,6 +305,8 @@ td, th {
   border-radius: 0.125rem;
   top: 1rem;
   right: 0.75rem;
+  width: 80px;
+  padding: 5px 5px;
 }
 
 html, body {
