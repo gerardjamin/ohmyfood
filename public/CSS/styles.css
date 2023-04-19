@@ -107,7 +107,8 @@ td, th {
   margin-right: 10px;
 }
 
-html, body {
+html,
+body {
   max-width: 375px;
   margin: auto;
 }
@@ -190,14 +191,10 @@ html, body {
   flex-direction: row;
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   border-radius: 1.25rem;
   background-color: #f6f6f6;
   position: relative;
-}
-.fonctionnement__list-li fa-mobile-alt {
-  width: 13.02px;
-  height: 19.9px;
 }
 .fonctionnement__list-li:nth-child(1) {
   font-family: "Roboto", sans-serif;
@@ -217,7 +214,7 @@ html, body {
   font-size: 16px;
   font-weight: 500;
 }
-.fonctionnement__list-li::after {
+.fonctionnement__list-li::before {
   counter-increment: myindex;
   content: counter(myindex);
   background: #9356dc;
@@ -234,10 +231,14 @@ html, body {
 .fonctionnement__icon {
   margin-right: 1rem;
   color: #7e7e7e;
+  padding-top: 9px;
+  padding-left: 1rem;
 }
 .fonctionnement__icon-primaire {
   margin-right: 1rem;
   color: #9356dc;
+  padding-top: 9px;
+  padding-left: 1rem;
 }
 
 .restaurant {
