@@ -118,7 +118,7 @@ html, body {
   background: #F7F7F7;
   padding-top: 18px;
 }
-.exploration h1 {
+.exploration__title {
   color: #353535;
   margin: auto;
   text-align: center;
@@ -140,11 +140,12 @@ html, body {
   margin: auto;
   margin-bottom: 27px;
 }
-.exploration .button {
+.exploration__button {
+  font-family: "Roboto", sans-serif;
+  color: black;
   width: fit-content;
   border: none;
-  padding: 13px 18.75px 13px 30px;
-  font-weight: 500;
+  text-align: center;
   font-size: 16px;
   border-radius: 25px;
   color: white;
@@ -156,10 +157,10 @@ html, body {
   height: 50px;
   margin: auto;
 }
-.exploration .button:hover {
+.exploration__button:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
-.exploration .button a {
+.exploration__button a {
   text-decoration: none;
 }
 
@@ -193,6 +194,10 @@ html, body {
   border-radius: 1.25rem;
   background-color: #f6f6f6;
   position: relative;
+}
+.fonctionnement__list-li fa-mobile-alt {
+  width: 13.02px;
+  height: 19.9px;
 }
 .fonctionnement__list-li:nth-child(1) {
   font-family: "Roboto", sans-serif;
