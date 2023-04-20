@@ -151,14 +151,16 @@ body {
   border-radius: 25px;
   color: white;
   padding-top: 14px;
-  background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: background 400ms ease-out, box-shadow 400ms ease-out;
   width: 218px;
   height: 50px;
   margin: auto;
 }
 .exploration__button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 .exploration__button a {
@@ -257,6 +259,7 @@ body {
   margin-bottom: 20px;
 }
 .restaurant .card-content {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -277,11 +280,22 @@ body {
   margin-left: 20px;
 }
 .restaurant .card-content .card__heart {
-  padding-top: 1rem;
-  margin-right: 2rem;
+  position: absolute;
+  left: 85%;
+  top: 20%;
 }
-.restaurant .card-content .card__heart .fa-heart {
-  color: #9356dc;
+.restaurant .card-content .card__heart .icon-2 {
+  fill: transparent;
+  opacity: 0.5;
+}
+.restaurant .card-content .card__heart .icon-3 {
+  fill: #000000;
+  opacity: 1;
+}
+.restaurant .card-content .card__heart:hover .icon-2 {
+  transition: fill 5s ease;
+  fill: #9356DC;
+  opacity: 1;
 }
 .restaurant .restaurant__link {
   text-decoration: none;

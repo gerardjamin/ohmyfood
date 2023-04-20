@@ -142,6 +142,7 @@ body {
   }
 
   & .card-content {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -162,11 +163,24 @@ body {
     }
 
     & .card__heart {
-      padding-top: 1rem;
-      margin-right: 2rem;
+      position: absolute;
+      left: 85%;
+      top: 20%;
 
-      & .fa-heart {
-        color: #9356dc;
+      .icon-2 {
+        fill: transparent;
+        opacity: 0.5;
+      }
+      .icon-3 {
+        fill: #000000;
+        opacity: 1;
+      }
+      &:hover {
+        .icon-2 {
+          transition: fill 5s ease;
+          fill: #9356DC;
+          opacity: 1;
+        }
       }
     }
   }
@@ -180,6 +194,7 @@ body {
     flex-direction: column;
     gap: 18px;
   }
+
   & .restaurant__cards {
     position: relative;
     background: white;

@@ -13,22 +13,69 @@
   @include Roboto;
   width: fit-content;
   border: none;
-  text-align: center;;
-  // padding: 13px 18.75px 13px 30px;
-  // font-weight: 500;
+  text-align: center;
   font-size: 16px;
   border-radius: 25px;
   color: white;
   padding-top: 14px;
-  background: linear-gradient(to top, $name 0%, #FF79DA 100%);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: background 400ms ease-out, box-shadow 400ms ease-out;
 
   &:hover {
+    //arriere plan et avant plan
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.15)
+      ),
+      linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
   }
 
   a {
     text-decoration: none;
+  }
+}
+
+@mixin heart {
+
+  .card__heart {
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: transparent;
+    border:1px solid black;
+    border-right: none;
+    
+   
+    border-radius: 20px 20px 0 0;
+    transform: rotate(-45deg);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: transparent;
+    border:1px solid black;
+    border-left: none;
+    border-radius: 20px 20px 0 0;
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    left: 8px;
   }
 }
