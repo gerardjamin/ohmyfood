@@ -171,23 +171,29 @@ body {
         background-color: transparent;
         border: none;
 
+        .icon-space {
+          fill: #9356dc;
+          opacity: 0;
+          transition-property: opacity;
+          transition-duration: 1s;
+          transition-timing-function: ease-in-out;
+        }
+
+        .icon-border {
+          fill: #000000;
+          opacity: 1;
+        }
+
         &:hover {
-          .icon-space,.icon-border  {
-            fill: #9356dc;
+          .icon-space,
+          .icon-border {
             opacity: 1;
-            transition: 500ms ease-in-out;
           }
-         
+
         }
       }
 
-      .icon-space {
-        fill: transparent;
-      }
-      .icon-border {
-        fill: #000000;
-        opacity: 1;
-      }
+
     }
   }
 

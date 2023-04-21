@@ -288,16 +288,19 @@ body {
   background-color: transparent;
   border: none;
 }
-.restaurant .card-content .card__heart-button:hover .icon-space, .restaurant .card-content .card__heart-button:hover .icon-border {
+.restaurant .card-content .card__heart-button .icon-space {
   fill: #9356dc;
-  opacity: 1;
-  transition: 500ms ease-in-out;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
-.restaurant .card-content .card__heart .icon-space {
-  fill: transparent;
-}
-.restaurant .card-content .card__heart .icon-border {
+.restaurant .card-content .card__heart-button .icon-border {
   fill: #000000;
+  opacity: 1;
+}
+.restaurant .card-content .card__heart-button:hover .icon-space,
+.restaurant .card-content .card__heart-button:hover .icon-border {
   opacity: 1;
 }
 .restaurant .restaurant__link {
