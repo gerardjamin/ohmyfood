@@ -171,12 +171,13 @@ body {
         background-color: transparent;
         border: none;
 
-        &:active {
-          .icon-space {
-            transition: fill 300ms ease-in;
+        &:hover {
+          .icon-space,.icon-border  {
             fill: #9356dc;
             opacity: 1;
+            transition: 500ms ease-in-out;
           }
+         
         }
       }
 

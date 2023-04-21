@@ -288,10 +288,10 @@ body {
   background-color: transparent;
   border: none;
 }
-.restaurant .card-content .card__heart-button:active .icon-space {
-  transition: fill 300ms ease-in;
+.restaurant .card-content .card__heart-button:hover .icon-space, .restaurant .card-content .card__heart-button:hover .icon-border {
   fill: #9356dc;
   opacity: 1;
+  transition: 500ms ease-in-out;
 }
 .restaurant .card-content .card__heart .icon-space {
   fill: transparent;
