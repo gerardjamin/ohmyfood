@@ -284,24 +284,26 @@ body {
   left: 83%;
   top: 20%;
 }
-.restaurant .card-content .card__heart-button {
+.restaurant .card-content .card__heart-button-palette, .restaurant .card-content .card__heart-button-charonne, .restaurant .card-content .card__heart-button-menilmontant, .restaurant .card-content .card__heart-button-mericourt {
   background-color: transparent;
   border: none;
 }
-.restaurant .card-content .card__heart-button .icon-space {
+.restaurant .card-content .card__heart-button-palette .icon-space, .restaurant .card-content .card__heart-button-charonne .icon-space, .restaurant .card-content .card__heart-button-menilmontant .icon-space, .restaurant .card-content .card__heart-button-mericourt .icon-space {
   fill: #9356dc;
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 1s;
+  transition-duration: 500ms;
   transition-timing-function: ease-in-out;
 }
-.restaurant .card-content .card__heart-button .icon-border {
-  fill: #000000;
+.restaurant .card-content .card__heart-button-palette .icon-border, .restaurant .card-content .card__heart-button-charonne .icon-border, .restaurant .card-content .card__heart-button-menilmontant .icon-border, .restaurant .card-content .card__heart-button-mericourt .icon-border {
+  fill: grey;
   opacity: 1;
 }
-.restaurant .card-content .card__heart-button:hover .icon-space,
-.restaurant .card-content .card__heart-button:hover .icon-border {
+.restaurant .card-content .card__heart-button-palette:focus .icon-space, .restaurant .card-content .card__heart-button-palette:hover .icon-space, .restaurant .card-content .card__heart-button-charonne:focus .icon-space, .restaurant .card-content .card__heart-button-charonne:hover .icon-space, .restaurant .card-content .card__heart-button-menilmontant:focus .icon-space, .restaurant .card-content .card__heart-button-menilmontant:hover .icon-space, .restaurant .card-content .card__heart-button-mericourt:focus .icon-space, .restaurant .card-content .card__heart-button-mericourt:hover .icon-space {
   opacity: 1;
+}
+.restaurant .card-content .card__heart-button-palette:focus .icon-border, .restaurant .card-content .card__heart-button-palette:hover .icon-border, .restaurant .card-content .card__heart-button-charonne:focus .icon-border, .restaurant .card-content .card__heart-button-charonne:hover .icon-border, .restaurant .card-content .card__heart-button-menilmontant:focus .icon-border, .restaurant .card-content .card__heart-button-menilmontant:hover .icon-border, .restaurant .card-content .card__heart-button-mericourt:focus .icon-border, .restaurant .card-content .card__heart-button-mericourt:hover .icon-border {
+  fill: #9356dc;
 }
 .restaurant .restaurant__link {
   text-decoration: none;
