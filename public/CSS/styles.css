@@ -281,20 +281,23 @@ body {
 }
 .restaurant .card-content .card__heart {
   position: absolute;
-  left: 85%;
+  left: 83%;
   top: 20%;
 }
-.restaurant .card-content .card__heart .icon-2 {
-  fill: transparent;
-  opacity: 0.5;
+.restaurant .card-content .card__heart-button {
+  background-color: transparent;
+  border: none;
 }
-.restaurant .card-content .card__heart .icon-3 {
-  fill: #000000;
+.restaurant .card-content .card__heart-button:active .icon-space {
+  transition: fill 1s ease-in;
+  fill: #9356dc;
   opacity: 1;
 }
-.restaurant .card-content .card__heart:hover .icon-2 {
-  transition: fill 5s ease;
-  fill: #9356DC;
+.restaurant .card-content .card__heart .icon-space {
+  fill: transparent;
+}
+.restaurant .card-content .card__heart .icon-border {
+  fill: #000000;
   opacity: 1;
 }
 .restaurant .restaurant__link {
