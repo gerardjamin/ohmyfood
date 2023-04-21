@@ -289,7 +289,7 @@ body {
   border: none;
 }
 .restaurant .card-content .card__heart-button:active .icon-space {
-  transition: fill 1s ease-in;
+  transition: fill 300ms ease-in;
   fill: #9356dc;
   opacity: 1;
 }

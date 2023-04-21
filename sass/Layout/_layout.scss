@@ -173,7 +173,7 @@ body {
 
         &:active {
           .icon-space {
-            transition: fill 1s ease-in;
+            transition: fill 300ms ease-in;
             fill: #9356dc;
             opacity: 1;
           }
@@ -187,13 +187,6 @@ body {
         fill: #000000;
         opacity: 1;
       }
-      // &:hover {
-      //   .icon-space {
-      //     transition: fill 300ms ease-in;
-      //     fill: #9356DC;
-      //     opacity: 1;
-      //   }
-      // }
     }
   }
 
