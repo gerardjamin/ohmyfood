@@ -60,6 +60,10 @@ body {
   height: 186px;
   background: $background-black;
 
+  @media (min-width: 1121px) {
+    flex-direction: row-reverse;
+  }
+
   & .container .logo {
     color: white;
     @include Shrikhand;
@@ -80,6 +84,10 @@ body {
     & a {
       color: white;
       text-decoration: none;
+    }
+
+    @media (min-width: 1121px) {
+      flex-direction: row;
     }
   }
 

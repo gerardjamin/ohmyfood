@@ -105,6 +105,11 @@ body {
   height: 186px;
   background: #353535;
 }
+@media (min-width: 1121px) {
+  .footer {
+    flex-direction: row-reverse;
+  }
+}
 .footer .container .logo {
   color: white;
   font-family: "Shrikhand", cursive;
@@ -123,6 +128,11 @@ body {
 .footer .footer-list a {
   color: white;
   text-decoration: none;
+}
+@media (min-width: 1121px) {
+  .footer .footer-list {
+    flex-direction: row;
+  }
 }
 .footer .fa-solid {
   margin-right: 10px;
@@ -201,8 +211,12 @@ body {
   padding: 2rem;
   counter-reset: myindex;
 }
-.fonctionnement__title {
-  margin-left: 5%;
+.fonctionnement .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.fonctionnement .container .fonctionnement__title {
   font-family: "Roboto", sans-serif;
   color: black;
   font-size: 24px;
@@ -210,20 +224,21 @@ body {
   margin-top: 15px;
   margin-bottom: 13px;
 }
-.fonctionnement__list-ol {
+.fonctionnement .container .fonctionnement__list-ol {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 @media (min-width: 1121px) {
-  .fonctionnement__list-ol {
+  .fonctionnement .container .fonctionnement__list-ol {
     flex-direction: row;
-    justify-content: space-evenly;
+    gap: 20px;
   }
 }
-.fonctionnement__list-li {
+.fonctionnement .container .fonctionnement__list-li {
   display: flex;
   flex-direction: row;
   padding: 1.5rem;
@@ -233,25 +248,25 @@ body {
   background-color: #f6f6f6;
   position: relative;
 }
-.fonctionnement__list-li:nth-child(1) {
+.fonctionnement .container .fonctionnement__list-li:nth-child(1) {
   font-family: "Roboto", sans-serif;
   color: black;
   font-size: 16px;
   font-weight: 500;
 }
-.fonctionnement__list-li:nth-child(2) {
+.fonctionnement .container .fonctionnement__list-li:nth-child(2) {
   font-family: "Roboto", sans-serif;
   color: black;
   font-size: 16px;
   font-weight: 500;
 }
-.fonctionnement__list-li:last-child {
+.fonctionnement .container .fonctionnement__list-li:last-child {
   font-family: "Roboto", sans-serif;
   color: black;
   font-size: 16px;
   font-weight: 500;
 }
-.fonctionnement__list-li::before {
+.fonctionnement .container .fonctionnement__list-li::before {
   counter-increment: myindex;
   content: counter(myindex);
   background: #9356dc;
@@ -265,13 +280,13 @@ body {
   position: absolute;
   left: -0.75rem;
 }
-.fonctionnement__icon {
+.fonctionnement .container .fonctionnement__icon {
   margin-right: 1rem;
   color: #7e7e7e;
   padding-top: 9px;
   padding-left: 1rem;
 }
-.fonctionnement__icon-primaire {
+.fonctionnement .container .fonctionnement__icon-primaire {
   margin-right: 1rem;
   color: #9356dc;
   padding-top: 9px;
@@ -347,6 +362,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+@media (min-width: 1121px) {
+  .restaurant .restaurant__article {
+    flex-direction: row;
+  }
 }
 .restaurant .restaurant__cards {
   position: relative;
