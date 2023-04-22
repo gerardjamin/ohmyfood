@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -45,8 +46,22 @@ td, th {
 
 html,
 body {
-  max-width: 375px;
   margin: auto;
+  height: auto;
+  /* styles pour tablette (à partir de 321px) */
+  /* styles pour ordinateur (à partir de 769px) */
+}
+@media (min-width: 767px) and (max-width: 1120px) {
+  html,
+  body {
+    max-width: 1120px;
+  }
+}
+@media (min-width: 1121px) {
+  html,
+  body {
+    max-width: 1440px;
+  }
 }
 
 .header {
@@ -130,6 +145,13 @@ body {
   color: black;
   font-weight: 700;
 }
+@media (min-width: 1121px) {
+  .exploration__title {
+    width: 645px;
+    font-size: 40px;
+    font-size: bold;
+  }
+}
 .exploration h3 {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -140,6 +162,12 @@ body {
   text-align: center;
   margin: auto;
   margin-bottom: 27px;
+}
+@media (min-width: 1121px) {
+  .exploration h3 {
+    width: 531px;
+    font-size: light;
+  }
 }
 .exploration__button {
   font-family: "Roboto", sans-serif;
@@ -174,6 +202,7 @@ body {
   counter-reset: myindex;
 }
 .fonctionnement__title {
+  margin-left: 5%;
   font-family: "Roboto", sans-serif;
   color: black;
   font-size: 24px;
@@ -187,6 +216,12 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@media (min-width: 1121px) {
+  .fonctionnement__list-ol {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 .fonctionnement__list-li {
   display: flex;
