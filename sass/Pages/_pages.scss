@@ -1,0 +1,232 @@
+//page d'accueil
+.exploration {
+    width: 100%;
+    height: 287px;
+    background: $background-grey;
+    padding-top: 18px;
+  
+    &__title {
+      color: $background-black;
+      margin: auto;
+      text-align: center;
+      width: 275px;
+      height: 68px;
+      font-size: 24px;
+      @include Roboto;
+      font-weight: 700;
+    }
+  
+    & h3 {
+      @include Roboto;
+      width: 315px;
+      height: 46px;
+      font-size: 18px;
+      font-weight: 300;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 27px;
+    }
+  
+    &__button {
+      @include button($Primaire);
+      width: 218px;
+      height: 50px;
+      margin: auto;
+    }
+  }
+  
+  .fonctionnement {
+    width: 100%;
+    height: 440px;
+    padding: 2rem;
+    counter-reset: myindex;
+  
+    &__title {
+      @include Roboto;
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 15px;
+      margin-bottom: 13px;
+    }
+  
+    &__list-ol {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  
+    &__list-li {
+      display: flex;
+      flex-direction: row;
+      padding: 1.5rem;
+      margin: 1rem 0 1rem 0.75rem;
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 15%);
+      border-radius: 1.25rem;
+      background-color: #f6f6f6;
+      //positionnement
+      position: relative;
+  
+      &:nth-child(1) {
+        @include Roboto;
+        font-size: 16px;
+        font-weight: 500;
+      }
+  
+      &:nth-child(2) {
+        @include Roboto;
+        font-size: 16px;
+        font-weight: 500;
+      }
+  
+      &:last-child {
+        @include Roboto;
+        font-size: 16px;
+        font-weight: 500;
+      }
+  
+      &::before {
+        counter-increment: myindex;
+        content: counter(myindex);
+  
+        background: #9356dc;
+        height: 24px;
+        width: 24px;
+        border-radius: 90px;
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+  
+        //positionnement
+        position: absolute;
+        left: -0.75rem;
+      }
+    }
+  
+    &__icon {
+      margin-right: 1rem;
+      color: #7e7e7e;
+      padding-top: 9px;
+      padding-left: 1rem;
+    }
+  
+    &__icon-primaire {
+      margin-right: 1rem;
+      color: #9356dc;
+      padding-top: 9px;
+      padding-left: 1rem;
+    }
+  }
+  
+  .restaurant {
+    width: 100%;
+    height: 1226px;
+    background: $background-grey;
+    padding-top: 50px;
+  
+    &__title {
+      @include Roboto;
+      font-size: 24px;
+      font-weight: 700;
+      margin-left: 20px;
+      line-height: 28.13px;
+      margin-bottom: 20px;
+    }
+  
+    & .card-content {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  
+      & .card-txt .card__title {
+        @include Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+  
+      & .card-txt .card__subtitle {
+        @include Roboto;
+        font-size: 17px;
+        font-weight: 300;
+        margin-left: 20px;
+      }
+  
+      & .card__heart {
+        position: absolute;
+        left: 83%;
+        top: 20%;
+  
+        &-button-palette,&-button-charonne,&-button-menilmontant,&-button-mericourt {
+          background-color: transparent;
+          border: none;
+  
+          .icon-space {
+            fill: #9356dc;
+            opacity: 0;
+            transition-property: opacity;
+            transition-duration: 500ms;
+            transition-timing-function: ease-in-out;
+          }
+          .icon-border {
+            fill:grey;
+            opacity: 1;
+          }
+  
+          &:focus,&:hover {
+            .icon-space {
+              opacity: 1;
+            }
+            .icon-border {
+              fill:#9356dc;
+            }
+          }
+        }
+        
+      }
+    }
+  
+    & .restaurant__link {
+      text-decoration: none;
+    }
+  
+    & .restaurant__article {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+  
+    & .restaurant__cards {
+      position: relative;
+      background: white;
+      margin-bottom: 30px;
+      width: 340px;
+      height: 250px;
+      margin: auto;
+      border-radius: 1rem 1rem 1rem 1rem;
+  
+      & img {
+        height: 10rem;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
+      }
+    }
+  
+    & .card__new {
+      position: absolute;
+      top: 35px;
+      background-color: $Tertiaire;
+      color: darken($Tertiaire, 50%);
+      border-radius: 0.125rem;
+      top: 1rem;
+      right: 0.75rem;
+      width: 80px;
+      padding: 5px 5px;
+    }
+  }
