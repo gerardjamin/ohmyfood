@@ -431,4 +431,69 @@ body {
   padding: 5px 5px;
 }
 
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.header-menu .header-logo {
+  width: 100%;
+  height: 44px;
+  margin-top: 14px;
+  text-align: center;
+  background: white;
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+
+.menu__banniere {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+.menu__content {
+  background-color: #F7F7F7;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  margin-top: -4rem;
+  z-index: 2;
+  padding-top: 25px;
+  position: relative;
+}
+.menu__content .menu__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.menu__content .menu__info .card__heart {
+  position: absolute;
+  left: 83%;
+  top: 0.2%;
+}
+.menu__content .menu__info .card__heart-button-palette, .menu__content .menu__info .card__heart-button-charonne, .menu__content .menu__info .card__heart-button-menilmontant, .menu__content .menu__info .card__heart-button-mericourt {
+  background-color: transparent;
+  border: none;
+}
+.menu__content .menu__info .card__heart-button-palette .icon-space, .menu__content .menu__info .card__heart-button-charonne .icon-space, .menu__content .menu__info .card__heart-button-menilmontant .icon-space, .menu__content .menu__info .card__heart-button-mericourt .icon-space {
+  fill: #9356dc;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.menu__content .menu__info .card__heart-button-palette .icon-border, .menu__content .menu__info .card__heart-button-charonne .icon-border, .menu__content .menu__info .card__heart-button-menilmontant .icon-border, .menu__content .menu__info .card__heart-button-mericourt .icon-border {
+  fill: grey;
+  opacity: 1;
+}
+.menu__content .menu__info .card__heart-button-palette:focus .icon-space, .menu__content .menu__info .card__heart-button-palette:hover .icon-space, .menu__content .menu__info .card__heart-button-charonne:focus .icon-space, .menu__content .menu__info .card__heart-button-charonne:hover .icon-space, .menu__content .menu__info .card__heart-button-menilmontant:focus .icon-space, .menu__content .menu__info .card__heart-button-menilmontant:hover .icon-space, .menu__content .menu__info .card__heart-button-mericourt:focus .icon-space, .menu__content .menu__info .card__heart-button-mericourt:hover .icon-space {
+  opacity: 1;
+}
+.menu__content .menu__info .card__heart-button-palette:focus .icon-border, .menu__content .menu__info .card__heart-button-palette:hover .icon-border, .menu__content .menu__info .card__heart-button-charonne:focus .icon-border, .menu__content .menu__info .card__heart-button-charonne:hover .icon-border, .menu__content .menu__info .card__heart-button-menilmontant:focus .icon-border, .menu__content .menu__info .card__heart-button-menilmontant:hover .icon-border, .menu__content .menu__info .card__heart-button-mericourt:focus .icon-border, .menu__content .menu__info .card__heart-button-mericourt:hover .icon-border {
+  fill: #9356dc;
+}
+
 /*# sourceMappingURL=styles.css.map */
