@@ -46,10 +46,11 @@ td, th {
 
 html,
 body {
+  width: 100%;
   margin: auto;
   height: auto;
-  /* styles pour tablette (à partir de 321px) */
-  /* styles pour ordinateur (à partir de 769px) */
+  /* styles pour tablette (à partir de 767px) */
+  /* styles pour ordinateur (à partir de 1121px) */
 }
 @media (min-width: 767px) and (max-width: 1120px) {
   html,
@@ -60,7 +61,7 @@ body {
 @media (min-width: 1121px) {
   html,
   body {
-    max-width: 1440px;
+    width: 100%;
   }
 }
 
@@ -108,6 +109,9 @@ body {
 @media (min-width: 1121px) {
   .footer {
     flex-direction: row-reverse;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    padding-right: 40px;
   }
 }
 .footer .container .logo {
@@ -121,7 +125,7 @@ body {
 .footer .footer-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   margin-left: 25px;
   margin-bottom: 22px;
 }
@@ -132,6 +136,9 @@ body {
 @media (min-width: 1121px) {
   .footer .footer-list {
     flex-direction: row;
+  }
+  .footer .footer-list .devenir-partenaire {
+    padding-right: 55px;
   }
 }
 .footer .fa-solid {
@@ -148,7 +155,7 @@ body {
   color: #353535;
   margin: auto;
   text-align: center;
-  width: 275px;
+  width: 100%;
   height: 68px;
   font-size: 24px;
   font-family: "Roboto", sans-serif;
@@ -165,7 +172,7 @@ body {
 .exploration h3 {
   font-family: "Roboto", sans-serif;
   color: black;
-  width: 315px;
+  width: 100%;
   height: 46px;
   font-size: 18px;
   font-weight: 300;
@@ -211,10 +218,19 @@ body {
   padding: 2rem;
   counter-reset: myindex;
 }
+@media (min-width: 1121px) {
+  .fonctionnement {
+    height: auto;
+  }
+}
 .fonctionnement .container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+}
+@media (min-width: 1121px) {
+  .fonctionnement .container {
+    margin: 0 25% 0 25%;
+  }
 }
 .fonctionnement .container .fonctionnement__title {
   font-family: "Roboto", sans-serif;
@@ -236,6 +252,8 @@ body {
   .fonctionnement .container .fonctionnement__list-ol {
     flex-direction: row;
     gap: 20px;
+    justify-content: flex-start;
+    width: auto;
   }
 }
 .fonctionnement .container .fonctionnement__list-li {
@@ -295,9 +313,17 @@ body {
 
 .restaurant {
   width: 100%;
-  height: 1226px;
+  height: auto;
   background: #F7F7F7;
   padding-top: 50px;
+  padding-bottom: 40px;
+}
+@media (min-width: 1121px) {
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
 }
 .restaurant__title {
   font-family: "Roboto", sans-serif;
@@ -307,6 +333,11 @@ body {
   margin-left: 20px;
   line-height: 28.13px;
   margin-bottom: 20px;
+}
+@media (min-width: 1121px) {
+  .restaurant__title {
+    margin-left: 25%;
+  }
 }
 .restaurant .card-content {
   position: relative;
@@ -362,17 +393,22 @@ body {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  width: 90%;
+  margin: auto;
 }
 @media (min-width: 1121px) {
   .restaurant .restaurant__article {
     flex-direction: row;
+    width: 45%;
+    margin-left: 25%;
+    gap: 10%;
   }
 }
 .restaurant .restaurant__cards {
   position: relative;
   background: white;
   margin-bottom: 30px;
-  width: 340px;
+  width: 100%;
   height: 250px;
   margin: auto;
   border-radius: 1rem 1rem 1rem 1rem;
