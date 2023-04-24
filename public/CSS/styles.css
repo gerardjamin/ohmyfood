@@ -431,6 +431,13 @@ body {
   padding: 5px 5px;
 }
 
+html,
+body {
+  width: 375px;
+  margin: auto;
+  height: auto;
+}
+
 .header-menu {
   display: flex;
   flex-direction: row;
@@ -494,6 +501,46 @@ body {
 }
 .menu__content .menu__info .card__heart-button-palette:focus .icon-border, .menu__content .menu__info .card__heart-button-palette:hover .icon-border, .menu__content .menu__info .card__heart-button-charonne:focus .icon-border, .menu__content .menu__info .card__heart-button-charonne:hover .icon-border, .menu__content .menu__info .card__heart-button-menilmontant:focus .icon-border, .menu__content .menu__info .card__heart-button-menilmontant:hover .icon-border, .menu__content .menu__info .card__heart-button-mericourt:focus .icon-border, .menu__content .menu__info .card__heart-button-mericourt:hover .icon-border {
   fill: #9356dc;
+}
+.menu .menu__entres, .menu .menu__plats, .menu .menu__desserts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.menu .menu__entres h2, .menu .menu__plats h2, .menu .menu__desserts h2 {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 300;
+}
+.menu .entrees__liste, .menu .plats__liste, .menu .desserts__liste {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 5%;
+  gap: 10px;
+}
+.menu .entrees__liste .lien, .menu .plats__liste .lien, .menu .desserts__liste .lien {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.menu .entrees__liste .lien .entree__info, .menu .entrees__liste .lien .plats__info, .menu .entrees__liste .lien .desserts__info, .menu .plats__liste .lien .entree__info, .menu .plats__liste .lien .plats__info, .menu .plats__liste .lien .desserts__info, .menu .desserts__liste .lien .entree__info, .menu .desserts__liste .lien .plats__info, .menu .desserts__liste .lien .desserts__info {
+  height: 69px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.menu .entrees__liste .lien .entree__info h2, .menu .entrees__liste .lien .plats__info h2, .menu .entrees__liste .lien .desserts__info h2, .menu .plats__liste .lien .entree__info h2, .menu .plats__liste .lien .plats__info h2, .menu .plats__liste .lien .desserts__info h2, .menu .desserts__liste .lien .entree__info h2, .menu .desserts__liste .lien .plats__info h2, .menu .desserts__liste .lien .desserts__info h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.menu .entrees__liste .lien .entree__info h3, .menu .entrees__liste .lien .plats__info h3, .menu .entrees__liste .lien .desserts__info h3, .menu .plats__liste .lien .entree__info h3, .menu .plats__liste .lien .plats__info h3, .menu .plats__liste .lien .desserts__info h3, .menu .desserts__liste .lien .entree__info h3, .menu .desserts__liste .lien .plats__info h3, .menu .desserts__liste .lien .desserts__info h3 {
+  font-size: 15px;
+  color: #000;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,11 @@
+html,
+body {
+  //styles pour mobile (à partir de 375px:mobile first)
+  width: 375px;
+  margin: auto;
+  height: auto;
+}
+
 .header-menu {
   display: flex;
   flex-direction: row;
@@ -14,6 +22,7 @@
   }
 }
 
+//section
 .menu {
   &__banniere {
     width: 100%;
@@ -39,18 +48,18 @@
       align-items: center;
       position: relative;
 
-    & .card__heart {
+      & .card__heart {
         position: absolute;
         left: 83%;
         top: 0.2%;
-  
+
         &-button-palette,
         &-button-charonne,
         &-button-menilmontant,
         &-button-mericourt {
           background-color: transparent;
           border: none;
-  
+
           .icon-space {
             fill: #9356dc;
             opacity: 0;
@@ -62,7 +71,7 @@
             fill: grey;
             opacity: 1;
           }
-  
+
           &:focus,
           &:hover {
             .icon-space {
@@ -73,10 +82,55 @@
             }
           }
         }
-      
       }
-     
     }
+  }
 
+  & .menu__entres,.menu__plats,.menu__desserts {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    h2 {
+      @include Roboto;
+      width: 100%;
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+
+  & .entrees__liste,.plats__liste,.desserts__liste {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 5%;
+    gap:10px;
+    & .lien {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      text-decoration: none;
+      border-radius: 15px;
+      background-color:#fff;
+
+      & .entree__info,.plats__info,.desserts__info {
+        
+        height:69px;
+        padding-top: 10px;
+        padding-left: 10px;
+        
+        h2 {
+          font-size: 18px;
+          font-weight: 700;
+        }
+        h3 {
+          font-size: 15px;
+          color:#000
+        }
+      }
+
+      & .entree__prix {
+
+      }
+    }
   }
 }
