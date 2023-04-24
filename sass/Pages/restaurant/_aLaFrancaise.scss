@@ -86,10 +86,12 @@ body {
     }
   }
 
-  & .menu__entres,.menu__plats,.menu__desserts {
-    display:flex;
+  & .menu__entres,
+  .menu__plats,
+  .menu__desserts {
+    display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
     h2 {
       @include Roboto;
       width: 100%;
@@ -98,11 +100,13 @@ body {
     }
   }
 
-  & .entrees__liste,.plats__liste,.desserts__liste {
+  & .entrees__liste,
+  .plats__liste,
+  .desserts__liste {
     display: flex;
     flex-direction: column;
     margin: 5% 5%;
-    gap:10px;
+    gap: 10px;
     & .lien {
       display: flex;
       flex-direction: row;
@@ -110,26 +114,23 @@ body {
       align-items: center;
       text-decoration: none;
       border-radius: 15px;
-      background-color:#fff;
+      background-color: #fff;
 
-      & .entree__info,.plats__info,.desserts__info {
-        
-        height:69px;
+      & .entree__info,
+      .plats__info,
+      .desserts__info {
+        height: 69px;
         padding-top: 10px;
         padding-left: 10px;
-        
+
         h2 {
           font-size: 18px;
           font-weight: 700;
         }
         h3 {
           font-size: 15px;
-          color:#000
+          color: #000;
         }
-      }
-
-      & .entree__prix {
-
       }
     }
   }
