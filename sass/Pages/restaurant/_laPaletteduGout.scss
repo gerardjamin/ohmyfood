@@ -176,4 +176,13 @@ body {
       }
     }
   }
+
+  & .commander__button {
+    @include button($Primaire);
+    width: 185px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
 }
