@@ -9,6 +9,8 @@ body {
 .header-menu {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 
   & .header-logo {
@@ -17,8 +19,12 @@ body {
     margin-top: 14px;
     text-align: center;
     background: white;
-    padding-top: 25px;
     padding-bottom: 45px;
+  }
+
+  & .icone-fleche {
+    font-size: 24px;
+    padding-left: 10px;
   }
 }
 
@@ -34,9 +40,9 @@ body {
 
   &__content {
     background-color: $background-grey;
-    border-top-left-radius: 2.5rem;
-    border-top-right-radius: 2.5rem;
-    margin-top: -4rem;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    margin-top: -68px;
     z-index: 2;
     padding-top: 25px;
     position: relative;
@@ -44,9 +50,16 @@ body {
     & .menu__info {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: start;
       position: relative;
+
+      & .restaurant__title {
+        @include Shrikhand;
+        font-size: 28px;
+        font-weight: 400;
+        font-style: italic;
+        padding-top: 8px;
+      }
 
       & .card__heart {
         position: absolute;
@@ -92,11 +105,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
     h2 {
       @include Roboto;
       width: 100%;
       font-size: 20px;
       font-weight: 300;
+      padding-left: 20px;
     }
   }
 
@@ -110,7 +125,7 @@ body {
     & .lien {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       text-decoration: none;
       border-radius: 15px;
@@ -119,18 +134,30 @@ body {
       & .entree__info,
       .plats__info,
       .desserts__info {
+        display: flex;
+        flex-direction: column;
         height: 69px;
         padding-top: 10px;
-        padding-left: 10px;
+        gap: 0.25rem;
+        // padding-left: 10px;
 
         h2 {
+          @include Roboto;
           font-size: 18px;
-          font-weight: 700;
+          font-weight: 500;
         }
         h3 {
+          @include Roboto;
           font-size: 15px;
+          font-weight: 300;
           color: #000;
+          padding-left: 20px;
         }
+      }
+
+      & .entree__prix,.plats__prix,.desserts__prix {
+        padding-right: 1rem;
+        padding-top: 1.3rem;;
       }
     }
   }
