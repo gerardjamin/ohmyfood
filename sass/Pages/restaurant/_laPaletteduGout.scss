@@ -1,7 +1,7 @@
 html,
 body {
   //styles pour mobile (à partir de 375px:mobile first)
-  width: 375px;
+  // width: 375px;
   margin: auto;
   height: auto;
 }
@@ -25,6 +25,7 @@ body {
   & .icone-fleche {
     font-size: 24px;
     padding-left: 10px;
+    color:#000;
   }
 }
 

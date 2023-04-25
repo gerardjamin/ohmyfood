@@ -433,7 +433,6 @@ body {
 
 html,
 body {
-  width: 375px;
   margin: auto;
   height: auto;
 }
@@ -456,6 +455,7 @@ body {
 .header-menu .icone-fleche {
   font-size: 24px;
   padding-left: 10px;
+  color: #000;
 }
 
 .menu__banniere {
