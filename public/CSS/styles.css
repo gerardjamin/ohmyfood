@@ -653,37 +653,6 @@ body {
   padding-top: 1.3rem;
   color: #000;
 }
-.menu .entrees__liste .lien .plats__slide,
-.menu .plats__liste .lien .plats__slide,
-.menu .desserts__liste .lien .plats__slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #99E2D0;
-  color: #fff;
-  font-size: rem(20);
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  width: 30px;
-  height: 70px;
-  opacity: 0;
-}
-.menu .entrees__liste .lien .plats__slide i,
-.menu .plats__liste .lien .plats__slide i,
-.menu .desserts__liste .lien .plats__slide i {
-  transform: rotate(0);
-  transition: transform 350ms ease;
-}
-.menu .entrees__liste .lien:hover .plate__confirmation,
-.menu .plats__liste .lien:hover .plate__confirmation,
-.menu .desserts__liste .lien:hover .plate__confirmation {
-  opacity: 1;
-}
-.menu .entrees__liste .lien:hover .plate__confirmation i,
-.menu .plats__liste .lien:hover .plate__confirmation i,
-.menu .desserts__liste .lien:hover .plate__confirmation i {
-  transform: rotate(360deg);
-}
 .menu .commander__button {
   font-family: "Roboto", sans-serif;
   color: black;
