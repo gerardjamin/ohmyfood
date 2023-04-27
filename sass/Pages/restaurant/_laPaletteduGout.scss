@@ -25,7 +25,7 @@ body {
   & .icone-fleche {
     font-size: 24px;
     padding-left: 10px;
-    color:#000;
+    color: #000;
   }
 }
 
@@ -47,6 +47,15 @@ body {
     z-index: 2;
     padding-top: 25px;
     position: relative;
+
+    @for $i from 1 through $nombre-plats {
+      .appear__plats-#{$i} {
+        $delay: $i * 500ms;
+        animation: menu-appear 3s $delay;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+      }
+    }
 
     & .menu__info {
       display: flex;
@@ -122,8 +131,8 @@ body {
       content: "______";
       position: absolute;
       bottom: -10px;
-      color: #99E2D0;
-     font-weight: 600;
+      color: #99e2d0;
+      font-weight: 600;
     }
   }
 
@@ -134,6 +143,7 @@ body {
     flex-direction: column;
     margin: 5% 5%;
     gap: 10px;
+
     & .lien {
       display: flex;
       flex-direction: row;
@@ -153,7 +163,9 @@ body {
         gap: 0.25rem;
         // padding-left: 10px;
 
-        .entree__titre,.plats__titre,.desserts__titre {
+        .entree__titre,
+        .plats__titre,
+        .desserts__titre {
           @include Roboto;
           font-size: 18px;
           font-weight: 500;
