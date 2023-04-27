@@ -187,6 +187,41 @@ body {
         padding-top: 1.3rem;
         color: #000;
       }
+
+      & .plats__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #99E2D0;
+        color: #fff;
+        font-size: rem(20);
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        width: 30px;
+        height: 70px;
+        opacity: 0;
+        // margin: -0.75rem -4.5rem -0.75rem 1rem;
+
+        i {
+          transform: rotate(0);
+          transition: transform 350ms ease;
+      }   
+
+      }
+
+      &:hover {
+        // @include hover-shadow;
+
+        .plate__confirmation {
+            // margin-right: -0.75rem;
+            opacity: 1;
+
+            i {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
     }
   }
 
