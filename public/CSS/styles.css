@@ -579,9 +579,9 @@ body {
   overflow: hidden; /* Cache le texte qui dépasse de la boîte */
   text-overflow: ellipsis; /* Ajoute les points de suspension */
 }
-.menu .entrees__liste .lien:hover::after,
-.menu .plats__liste .lien:hover::after,
-.menu .desserts__liste .lien:hover::after {
+.menu .entrees__liste .lien::before,
+.menu .plats__liste .lien::before,
+.menu .desserts__liste .lien::before {
   content: "\f058";
   display: flex;
   justify-content: center;
@@ -593,16 +593,23 @@ body {
   position: absolute;
   background: #99e2d0;
   top: 0;
-  right: -40px;
+  right: -52px;
   width: 50px;
   height: 70px;
   border-radius: 0 15px 15px 0;
-  animation: coche-appear 500ms ease-in-out both;
+  transform: rotate(0deg);
+}
+.menu .entrees__liste .lien:hover::before,
+.menu .plats__liste .lien:hover::before,
+.menu .desserts__liste .lien:hover::before {
+  animation: coche-appear 500ms ease-in-out forwards;
+  transition: transform 500ms ease-in-out;
+  transform-origin: center;
 }
 .menu .entrees__liste .lien:hover,
 .menu .plats__liste .lien:hover,
 .menu .desserts__liste .lien:hover {
-  padding-right: 50px;
+  padding-right: 52px;
   transition: padding-right 500ms ease-in-out;
 }
 .menu .entrees__liste .lien .entree__info,
@@ -779,8 +786,17 @@ body {
   90% {
     transform: translateX(-36px);
   }
-  100% {
+  95% {
     transform: translateX(-40px);
+  }
+  97% {
+    transform: translateX(-44px);
+  }
+  99% {
+    transform: translateX(-48px);
+  }
+  100% {
+    transform: translateX(-52px);
   }
 }
 
