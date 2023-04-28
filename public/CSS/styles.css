@@ -572,9 +572,23 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   text-decoration: none;
   border-radius: 15px;
   background-color: #fff;
+}
+.menu .entrees__liste .lien:hover::after,
+.menu .plats__liste .lien:hover::after,
+.menu .desserts__liste .lien:hover::after {
+  content: "";
+  position: absolute;
+  background: #99E2D0;
+  top: 0;
+  right: -40px;
+  width: 40px;
+  height: 70px;
+  border-radius: 0 15px 15px 0;
+  animation: coche-appear 500ms ease-in-out forwards;
 }
 .menu .entrees__liste .lien .entree__info,
 .menu .entrees__liste .lien .plats__info,
@@ -714,6 +728,44 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes coche-appear {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(-4px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(-8px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(-12px);
+  }
+  40% {
+    transform: translateX(-16px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  60% {
+    transform: translateX(-24px);
+  }
+  70% {
+    transform: translateX(-28px);
+  }
+  80% {
+    transform: translateX(-32px);
+  }
+  90% {
+    transform: translateX(-36px);
+  }
+  100% {
+    transform: translateX(-40px);
   }
 }
 

@@ -109,6 +109,7 @@ body {
     }
   }
 
+  //premier article
   & .menu__entres,
   .menu__plats,
   .menu__desserts {
@@ -149,9 +150,22 @@ body {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      position: relative;
       text-decoration: none;
       border-radius: 15px;
       background-color: #fff;
+     
+      &:hover::after {
+        content: "";
+        position: absolute;
+        background: #99E2D0;
+        top:0;
+        right:-40px;
+        width: 40px;
+        height: 70px;
+        border-radius: 0 15px 15px 0;
+        animation:coche-appear 500ms ease-in-out forwards;
+      }
 
       & .entree__info,
       .plats__info,
@@ -186,8 +200,6 @@ body {
         padding-top: 1.3rem;
         color: #000;
       }
-
-
     }
   }
 
