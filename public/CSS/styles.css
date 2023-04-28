@@ -576,19 +576,34 @@ body {
   text-decoration: none;
   border-radius: 15px;
   background-color: #fff;
+  overflow: hidden; /* Cache le texte qui dépasse de la boîte */
+  text-overflow: ellipsis; /* Ajoute les points de suspension */
 }
 .menu .entrees__liste .lien:hover::after,
 .menu .plats__liste .lien:hover::after,
 .menu .desserts__liste .lien:hover::after {
-  content: "";
+  content: "\f058";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 24px;
+  color: #fff;
   position: absolute;
-  background: #99E2D0;
+  background: #99e2d0;
   top: 0;
   right: -40px;
-  width: 40px;
+  width: 50px;
   height: 70px;
   border-radius: 0 15px 15px 0;
-  animation: coche-appear 500ms ease-in-out forwards;
+  animation: coche-appear 500ms ease-in-out both;
+}
+.menu .entrees__liste .lien:hover,
+.menu .plats__liste .lien:hover,
+.menu .desserts__liste .lien:hover {
+  padding-right: 50px;
+  transition: padding-right 500ms ease-in-out;
 }
 .menu .entrees__liste .lien .entree__info,
 .menu .entrees__liste .lien .plats__info,

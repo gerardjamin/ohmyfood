@@ -154,17 +154,32 @@ body {
       text-decoration: none;
       border-radius: 15px;
       background-color: #fff;
-     
+      // white-space: nowrap; /* Empêche le texte de passer à la ligne */
+      overflow: hidden; /* Cache le texte qui dépasse de la boîte */
+      text-overflow: ellipsis; /* Ajoute les points de suspension */
+
       &:hover::after {
-        content: "";
+        content: "\f058";   //code unicode de l'icone
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 24px;
+        color:#fff;
+
         position: absolute;
-        background: #99E2D0;
-        top:0;
-        right:-40px;
-        width: 40px;
+        background: #99e2d0;
+        top: 0;
+        right: -40px;
+        width: 50px;
         height: 70px;
         border-radius: 0 15px 15px 0;
-        animation:coche-appear 500ms ease-in-out forwards;
+        animation: coche-appear 500ms ease-in-out both;
+      }
+      &:hover {
+        padding-right: 50px;
+        transition: padding-right 500ms ease-in-out;
       }
 
       & .entree__info,
