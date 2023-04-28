@@ -572,9 +572,45 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   text-decoration: none;
   border-radius: 15px;
   background-color: #fff;
+  overflow: hidden; /* Cache le texte qui dépasse de la boîte */
+  text-overflow: ellipsis; /* Ajoute les points de suspension */
+}
+.menu .entrees__liste .lien::before,
+.menu .plats__liste .lien::before,
+.menu .desserts__liste .lien::before {
+  content: "\f058";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+  background: #99e2d0;
+  top: 0;
+  right: -52px;
+  width: 50px;
+  height: 70px;
+  border-radius: 0 15px 15px 0;
+  transform: rotate(0deg);
+}
+.menu .entrees__liste .lien:hover::before,
+.menu .plats__liste .lien:hover::before,
+.menu .desserts__liste .lien:hover::before {
+  animation: coche-appear 500ms ease-in-out forwards;
+  transition: transform 500ms ease-in-out;
+  transform-origin: center;
+}
+.menu .entrees__liste .lien:hover,
+.menu .plats__liste .lien:hover,
+.menu .desserts__liste .lien:hover {
+  padding-right: 52px;
+  transition: padding-right 500ms ease-in-out;
 }
 .menu .entrees__liste .lien .entree__info,
 .menu .entrees__liste .lien .plats__info,
@@ -714,6 +750,53 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes coche-appear {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(-4px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(-8px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(-12px);
+  }
+  40% {
+    transform: translateX(-16px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  60% {
+    transform: translateX(-24px);
+  }
+  70% {
+    transform: translateX(-28px);
+  }
+  80% {
+    transform: translateX(-32px);
+  }
+  90% {
+    transform: translateX(-36px);
+  }
+  95% {
+    transform: translateX(-40px);
+  }
+  97% {
+    transform: translateX(-44px);
+  }
+  99% {
+    transform: translateX(-48px);
+  }
+  100% {
+    transform: translateX(-52px);
   }
 }
 
