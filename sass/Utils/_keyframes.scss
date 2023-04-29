@@ -38,47 +38,45 @@
 @keyframes coche-appear {
   0% {
     transform:translateX(0);
-    opacity:0
   }
   10% {
-    transform:translateX(-4px);
-    opacity:0
+    transform:translateX(-5px);
   }
   20% {
-    transform:translateX(-8px);
-    opacity:0;
+    transform:translateX(-9px);
   }
   30% {
-    transform:translateX(-12px);
+    transform:translateX(-13px);
   }
   40% {
-    transform:translateX(-16px);
+    transform:translateX(-17px);
   }
   50% {
-    transform:translateX(-20px);
+    transform:translateX(-21px);
   }
   60% {
-    transform:translateX(-24px);
+    transform:translateX(-25px);
   }
   70% {
-    transform:translateX(-28px);
+    transform:translateX(-29px);
   }
   80% {
-    transform:translateX(-32px);
+    transform:translateX(-33px);
   }
   90% {
-    transform:translateX(-36px);
+    transform:translateX(-37px);
   }
   95% {
-    transform:translateX(-40px);
+    transform:translateX(-41px);
   }
   97% {
-    transform:translateX(-44px);
+    transform:translateX(-45px);
   }
   99% {
-    transform:translateX(-48px);
+    transform:translateX(-49px);
   }
   100% {
-    transform:translateX(-52px);
+    transform:translateX(-50px);
+    opacity:1;
   }
 }
