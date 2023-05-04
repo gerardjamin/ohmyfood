@@ -588,28 +588,8 @@ body {
 .menu .entrees__liste .lien:hover .fa-circle-check, .menu .plats__liste .lien:hover .fa-circle-check, .menu .desserts__liste .lien:hover .fa-circle-check {
   transform: rotate(360deg);
 }
-<<<<<<< HEAD
-.menu .entrees__liste .lien .entree__info,
-.menu .entrees__liste .lien .plats__info,
-.menu .entrees__liste .lien .desserts__info,
-.menu .plats__liste .lien .entree__info,
-.menu .plats__liste .lien .plats__info,
-.menu .plats__liste .lien .desserts__info,
-.menu .desserts__liste .lien .entree__info,
-.menu .desserts__liste .lien .plats__info,
-.menu .desserts__liste .lien .desserts__info {
-  display: flex;
-  flex-direction: column;
-  height: 69px;
-  padding-top: 10px;
-  gap: 0.25rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-=======
 .menu .entrees__liste .lien:hover .entree__prix, .menu .entrees__liste .lien:hover .plats__prix, .menu .entrees__liste .lien:hover .desserts__prix, .menu .plats__liste .lien:hover .entree__prix, .menu .plats__liste .lien:hover .plats__prix, .menu .plats__liste .lien:hover .desserts__prix, .menu .desserts__liste .lien:hover .entree__prix, .menu .desserts__liste .lien:hover .plats__prix, .menu .desserts__liste .lien:hover .desserts__prix {
   margin-right: 60px;
->>>>>>> workBranch
 }
 .menu .entrees__liste .lien:hover p, .menu .plats__liste .lien:hover p, .menu .desserts__liste .lien:hover p {
   width: 50%;
@@ -630,17 +610,11 @@ body {
   color: black;
   font-size: 18px;
   font-weight: 500;
-<<<<<<< HEAD
-  padding-left: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-=======
   flex: 1 100%;
   color: black;
   margin-right: 0px;
   overflow: hidden;
   white-space: nowrap;
->>>>>>> workBranch
   text-overflow: ellipsis;
 }
 .menu .entrees__liste .lien p, .menu .plats__liste .lien p, .menu .desserts__liste .lien p {
@@ -649,18 +623,11 @@ body {
   font-size: 15px;
   font-weight: 300;
   color: #000;
-<<<<<<< HEAD
-  padding-left: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-=======
   width: 90%;
   overflow: hidden; /* Cache le texte qui dépasse de la boîte */
   white-space: nowrap; /* Empêche le texte de passer à la ligne */
   text-overflow: ellipsis; /* Ajoute les points de suspension */
   font-size: 0.8rem;
->>>>>>> workBranch
 }
 .menu .entrees__liste .lien .entree__prix,
 .menu .entrees__liste .lien .plats__prix,
@@ -743,50 +710,8 @@ body {
   0% {
     transform: translateX(0);
   }
-<<<<<<< HEAD
-  10% {
-    transform: translateX(-5px);
-  }
-  20% {
-    transform: translateX(-9px);
-  }
-  30% {
-    transform: translateX(-13px);
-  }
-  40% {
-    transform: translateX(-17px);
-  }
-  50% {
-    transform: translateX(-21px);
-  }
-  60% {
-    transform: translateX(-25px);
-  }
-  70% {
-    transform: translateX(-29px);
-  }
-  80% {
-    transform: translateX(-33px);
-  }
-  90% {
-    transform: translateX(-37px);
-  }
-  95% {
-    transform: translateX(-41px);
-  }
-  97% {
-    transform: translateX(-45px);
-  }
-  99% {
-    transform: translateX(-49px);
-  }
   100% {
     transform: translateX(-50px);
-    opacity: 1;
-=======
-  100% {
-    transform: translateX(-50px);
->>>>>>> workBranch
   }
 }
 
