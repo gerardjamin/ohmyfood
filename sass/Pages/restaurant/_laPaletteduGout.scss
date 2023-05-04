@@ -109,7 +109,6 @@ body {
     }
   }
 
-  //premier article
   & .menu__entres,
   .menu__plats,
   .menu__desserts {
@@ -138,8 +137,8 @@ body {
   }
 
   & .entrees__liste,
-  .plats__liste,
-  .desserts__liste {
+  & .plats__liste,
+  & .desserts__liste {
     display: flex;
     flex-direction: column;
     margin: 5% 5%;
@@ -148,85 +147,117 @@ body {
     & .lien {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;
-      position: relative;
-      text-decoration: none;
+      align-items: flex-start;
+      width: auto;
+      height: 70px;
+      line-height: 25px;
+      padding: 15px;
+      margin: 10px;
       border-radius: 15px;
-      background-color: #fff;
-     
-      &::before {
-        content: "\f058";   //code unicode de l'icone
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        font-size: 24px;
-        color:#fff;
-        position: absolute;
-        background: #99e2d0;
-        top: 0;
-        right: -52px;
-        width: 50px;
-        height: 70px;
-        border-radius: 0 15px 15px 0;
-        opacity:0;
-        transform: rotate(0deg); // initialisation de la rotation à 0
-      }
-      &:hover::before {
-        animation: coche-appear 500ms ease-in-out both;
-        transform:rotate(90deg);
-        transition: transform 500ms ease-in-out;
-        transform-origin: center;
-      }
-      //price
-      &:hover {
-        padding-right: 52px;
-        transition: padding-right 500ms ease-in-out;
-      }
-     
-      & .entree__info,
-      .plats__info,
-      .desserts__info {
-        display: flex;
-        flex-direction: column;
-        height: 69px;
-        padding-top: 10px;
-        gap: 0.25rem;
-        white-space: nowrap;
-        overflow:hidden;
-        text-overflow: ellipsis;
+      box-shadow: 2px 2px 5px 2px $background-grey;
+      background-color: $background-white;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
 
-        .entree__titre,
-        .plats__titre,
-        .desserts__titre {
-          @include Roboto;
-          font-size: 18px;
-          font-weight: 500;
-          padding-left: 20px;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
-        h3 {
-          @include Roboto;
-          font-size: 15px;
-          font-weight: 300;
-          color: #000;
-          padding-left: 20px;
-          white-space: nowrap;
-          overflow:hidden;
-          text-overflow: ellipsis;
-        }
+      &:hover .icone {
+        //transition evenement
+        right: 0px;
+        opacity: 1;
+      }
+
+      &:hover .fa-circle-check {
+        //transition evenement
+        transform: rotate(360deg);
+      }
+
+      &:hover .entree__prix,
+      &:hover .plats__prix,
+      &:hover .desserts__prix {
+        //transition evenement
+        margin-right: 60px;
+      }
+
+      &:hover p {
+        width: 50%;
+        transition: width 1000ms;
+      }
+
+      &:hover .entree__titre,
+      &:hover .plats__titre,
+      &:hover .desserts__titre {
+        margin-right: 30%;
+        transition: margin-right 1000ms;
+      }
+
+      .entree__titre,
+      .plats__titre,
+      .desserts__titre {
+        @include Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        flex: 1 100%; //permet le saut de ligne
+        color: black;
+        margin-right: 0px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      p {
+        @include Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        color: #000;
+        width: 90%;
+        overflow: hidden; /* Cache le texte qui dépasse de la boîte */
+        white-space: nowrap; /* Empêche le texte de passer à la ligne */
+        text-overflow: ellipsis; /* Ajoute les points de suspension */
+        font-size: 0.8rem;
       }
 
       & .entree__prix,
       .plats__prix,
       .desserts__prix {
-        padding-right: 1rem;
-        padding-top: 1.3rem;
+        @include Roboto;
+        font-size: 15px;
+        font-weight: 800;
         color: #000;
+        width: 10%;
+        white-space: nowrap; /* Empêche le texte de passer à la ligne */
+        overflow: hidden; /* Cache le texte qui dépasse de la boîte */
+        text-overflow: ellipsis; /* Ajoute les points de suspension */
+        //transition before
+        margin-right: 0;
+        transition: margin-right 1000ms;
+      }
+
+      & .icone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60px;
+        background-color: #99e2d0;
+        position: absolute;
+        top: 0px;
+        padding-left: 10px;
+        //transition before
+        right: -60px;
+        opacity: 1;
+        transition: right 1000ms ease-in-out;
+      }
+
+      & .fa-circle-check {
+        border-radius: 50%;
+        color: #fff;
+        background-color: #99e2d0;
+        font-size: 2rem;
+        //transition before
+        transition: transform 1000ms ease-in-out;
+        transform: rotate(0);
       }
     }
   }

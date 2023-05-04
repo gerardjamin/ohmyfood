@@ -1,35 +1,8 @@
-
 @keyframes menu-appear {
   0% {
     opacity: 0;
   }
-  10% {
-    opacity: 0.1;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  30% {
-    opacity: 0.3;
-  }
-  40% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  60% {
-    opacity: 0.6;
-  }
-  70% {
-    opacity: 0.7;
-  }
-  80% {
-    opacity: 0.8;
-  }
-  90% {
-    opacity: 0.9;
-  }
+  
   100% {
     opacity: 1;
   }
@@ -39,44 +12,8 @@
   0% {
     transform:translateX(0);
   }
-  10% {
-    transform:translateX(-5px);
-  }
-  20% {
-    transform:translateX(-9px);
-  }
-  30% {
-    transform:translateX(-13px);
-  }
-  40% {
-    transform:translateX(-17px);
-  }
-  50% {
-    transform:translateX(-21px);
-  }
-  60% {
-    transform:translateX(-25px);
-  }
-  70% {
-    transform:translateX(-29px);
-  }
-  80% {
-    transform:translateX(-33px);
-  }
-  90% {
-    transform:translateX(-37px);
-  }
-  95% {
-    transform:translateX(-41px);
-  }
-  97% {
-    transform:translateX(-45px);
-  }
-  99% {
-    transform:translateX(-49px);
-  }
+  
   100% {
     transform:translateX(-50px);
-    opacity:1;
   }
 }
