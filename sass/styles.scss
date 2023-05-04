@@ -1,11 +1,17 @@
 @import "./Base/reset.scss";
 @import "./Utils/variables";
 @import "./Utils/mixins";
+@import "./Utils/keyframes";
+
 @import "./Components/components";
 @import "./Layout/layout";
 @import "./Pages/pages";
+@import "./Pages/restaurant/aLaFrancaise";
 @import "./Pages/restaurant/laPaletteduGout";
-@import "./Utils/keyframes";
+@import "./Pages/restaurant/laNoteEnchantee";
+@import "./Pages/restaurant/leDelicedesSens";
+
+
 
 
 
