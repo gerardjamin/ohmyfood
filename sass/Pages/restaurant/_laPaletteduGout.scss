@@ -231,7 +231,11 @@ body {
         text-overflow: ellipsis; /* Ajoute les points de suspension */
         //transition before
         margin-right: 0;
-        transition: margin-right 1000ms;
+        transition: margin-right 1000ms ease-in-out;
+        @media (min-width: 1121px) {
+          padding-left: 5.5%;
+        }
+       
       }
 
       & .icone {
@@ -239,7 +243,7 @@ body {
         justify-content: center;
         align-items: center;
         height: 100%;
-        width: 60px;
+        width: 50px;
         background-color: #99e2d0;
         position: absolute;
         top: 0px;

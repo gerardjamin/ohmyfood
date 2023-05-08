@@ -1,1 +1,29 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(#fff, 0.95);
+  animation:content-appear 5s ease forwards;
 
+  @for $i from 1 through $nb-circles {
+    & .cercle-#{$i} {
+      display: inline-block;
+      animation: cercle 250ms forwards ease 50;
+      animation-direction: alternate;
+      animation-delay: 250ms * $i;
+      fill: hsl(90 * $i, 100%, 50%);
+    }
+  }
+
+  svg {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

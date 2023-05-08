@@ -50,8 +50,8 @@ body {
 
     @for $i from 1 through $nombre-plats {
       .appear__plats-#{$i} {
-        $delay: $i * 500ms;
-        animation: menu-appear 3s $delay;
+        $delay: $i * 200ms;
+        animation: menu-appear 500ms $delay;
         animation-fill-mode: both;
         animation-timing-function: ease-in-out;
       }
@@ -229,6 +229,9 @@ body {
         white-space: nowrap; /* Empêche le texte de passer à la ligne */
         overflow: hidden; /* Cache le texte qui dépasse de la boîte */
         text-overflow: ellipsis; /* Ajoute les points de suspension */
+        @media (min-width: 1121px) {
+          padding-left: 5.5%;
+        }
         //transition before
         margin-right: 0;
         transition: margin-right 1000ms;
