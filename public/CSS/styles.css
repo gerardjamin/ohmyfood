@@ -243,7 +243,6 @@ body {
   .exploration__title {
     width: 645px;
     font-size: 40px;
-    font-size: bold;
   }
 }
 .exploration h3 {
@@ -260,7 +259,6 @@ body {
 @media (min-width: 1121px) {
   .exploration h3 {
     width: 531px;
-    font-size: light;
   }
 }
 .exploration__button {
