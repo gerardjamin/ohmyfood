@@ -229,6 +229,9 @@ body {
         white-space: nowrap; /* Empêche le texte de passer à la ligne */
         overflow: hidden; /* Cache le texte qui dépasse de la boîte */
         text-overflow: ellipsis; /* Ajoute les points de suspension */
+        @media (min-width: 1121px) {
+          padding-left: 5.5%;
+        }
         //transition before
         margin-right: 0;
         transition: margin-right 1000ms;

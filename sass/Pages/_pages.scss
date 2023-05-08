@@ -1,4 +1,8 @@
 //page d'accueil
+
+.content {
+  animation:content-appear 5s reverse;
+}
 .exploration {
   width: 100%;
   height: 287px;
