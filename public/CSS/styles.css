@@ -94,21 +94,21 @@ td, th {
   animation: cercle 250ms forwards ease 50;
   animation-direction: alternate;
   animation-delay: 250ms;
-  fill: hsl(90, 100%, 50%);
+  fill: hsl(290, 100%, 60%);
 }
 .loader .cercle-2 {
   display: inline-block;
   animation: cercle 250ms forwards ease 50;
   animation-direction: alternate;
   animation-delay: 500ms;
-  fill: hsl(180, 100%, 50%);
+  fill: hsl(340, 100%, 60%);
 }
 .loader .cercle-3 {
   display: inline-block;
   animation: cercle 250ms forwards ease 50;
   animation-direction: alternate;
   animation-delay: 750ms;
-  fill: hsl(270, 100%, 50%);
+  fill: hsl(30, 100%, 60%);
 }
 .loader svg {
   margin: auto;

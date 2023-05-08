@@ -16,7 +16,7 @@
       animation: cercle 250ms forwards ease 50;
       animation-direction: alternate;
       animation-delay: 250ms * $i;
-      fill: hsl(90 * $i, 100%, 50%);
+      fill: hsl(240 + (50* $i), 100%, 60%);
     }
   }
 
