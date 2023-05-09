@@ -158,6 +158,7 @@ body {
       border-radius: 15px;
       box-shadow: 2px 2px 5px 2px $background-grey;
       background-color: $background-white;
+
       position: relative;
       overflow: hidden;
       text-decoration: none;
@@ -177,19 +178,20 @@ body {
       &:hover .plats__prix,
       &:hover .desserts__prix {
         //transition evenement
-        margin-right: 60px;
+        width: calc(10% + 60px);
+        transition: width 250ms;
       }
 
       &:hover p {
-        width: 50%;
-        transition: width 1000ms;
+        width: calc(90% - 60px);
+        transition: width 250ms;
       }
 
       &:hover .entree__titre,
       &:hover .plats__titre,
       &:hover .desserts__titre {
         margin-right: 30%;
-        transition: margin-right 1000ms;
+        transition: margin-right 250ms;
       }
 
       .entree__titre,
@@ -216,6 +218,7 @@ body {
         white-space: nowrap; /* Empêche le texte de passer à la ligne */
         text-overflow: ellipsis; /* Ajoute les points de suspension */
         font-size: 0.8rem;
+        transition: width 250ms;
       }
 
       & .entree__prix,
@@ -233,8 +236,7 @@ body {
           padding-left: 5.5%;
         }
         //transition before
-        margin-right: 0;
-        transition: margin-right 1000ms;
+        transition: width 250ms;
       }
 
       & .icone {
@@ -250,7 +252,7 @@ body {
         //transition before
         right: -60px;
         opacity: 1;
-        transition: right 1000ms ease-in-out;
+        transition: right 250ms ease-in-out;
       }
 
       & .fa-circle-check {
@@ -259,7 +261,7 @@ body {
         background-color: #99e2d0;
         font-size: 2rem;
         //transition before
-        transition: transform 1000ms ease-in-out;
+        transition: transform 250ms ease-in-out;
         transform: rotate(0);
       }
     }
