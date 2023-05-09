@@ -58,6 +58,7 @@
   width: 100%;
   height: 440px;
   padding: 2rem;
+  //set myindex to 0
   counter-reset: myindex;
 
   @media (min-width: 1121px) {
@@ -126,13 +127,15 @@
       }
 
       &::before {
+        //increment myindex by one
         counter-increment: myindex;
+        //display myindex value
         content: counter(myindex);
 
         background: #9356dc;
         height: 24px;
         width: 24px;
-        border-radius: 90px;
+        border-radius: 50%;
 
         display: flex;
         justify-content: center;
