@@ -1,7 +1,14 @@
 //page d'accueil
 
 .content {
-  animation:content-appear 5s reverse;
+  animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: content-appear;
+    animation-delay: 5ms;
 }
 .exploration {
   width: 100%;

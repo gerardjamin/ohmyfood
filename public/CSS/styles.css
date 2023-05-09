@@ -57,7 +57,7 @@ td, th {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50px);
+    transform: translateX(-60px);
   }
 }
 @keyframes cercle {
@@ -68,13 +68,84 @@ td, th {
     transform: scale(1);
   }
 }
-@keyframes content-appear {
+@keyframes loader-appear {
   0% {
+    z-index: 1;
+  }
+  10% {
+    z-index: 1;
+  }
+  20% {
+    z-index: 1;
+  }
+  30% {
+    z-index: 1;
+  }
+  40% {
+    z-index: 1;
+  }
+  50% {
+    z-index: 1;
+  }
+  60% {
+    z-index: 1;
+  }
+  70% {
+    z-index: 1;
+  }
+  80% {
+    z-index: 1;
+  }
+  90% {
     z-index: 1;
   }
   100% {
     z-index: -1;
     opacity: 0;
+  }
+}
+@keyframes content-appear {
+  0% {
+    z-index: -1;
+    opacity: 0;
+  }
+  10% {
+    z-index: -1;
+    opacity: 0;
+  }
+  20% {
+    z-index: -1;
+    opacity: 0;
+  }
+  30% {
+    z-index: -1;
+    opacity: 0;
+  }
+  40% {
+    z-index: -1;
+    opacity: 0;
+  }
+  50% {
+    z-index: -1;
+    opacity: 0;
+  }
+  60% {
+    z-index: -1;
+    opacity: 0;
+  }
+  70% {
+    z-index: -1;
+    opacity: 0;
+  }
+  80% {
+    z-index: -1;
+    opacity: 0;
+  }
+  90% {
+    z-index: 1;
+  }
+  100% {
+    z-index: 1;
   }
 }
 .loader {
@@ -87,28 +158,35 @@ td, th {
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.95);
-  animation: content-appear 5s ease forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  animation-name: loader-appear;
 }
 .loader .cercle-1 {
   display: inline-block;
-  animation: cercle 250ms forwards ease 50;
+  animation: cercle 150ms forwards infinite;
   animation-direction: alternate;
-  animation-delay: 250ms;
-  fill: hsl(290, 100%, 60%);
+  animation-delay: 100ms;
+  fill: hsl(290, 100%, 50%);
 }
 .loader .cercle-2 {
   display: inline-block;
-  animation: cercle 250ms forwards ease 50;
+  animation: cercle 150ms forwards infinite;
   animation-direction: alternate;
-  animation-delay: 500ms;
-  fill: hsl(340, 100%, 60%);
+  animation-delay: 200ms;
+  fill: hsl(340, 100%, 50%);
 }
 .loader .cercle-3 {
   display: inline-block;
-  animation: cercle 250ms forwards ease 50;
+  animation: cercle 150ms forwards infinite;
   animation-direction: alternate;
-  animation-delay: 750ms;
-  fill: hsl(30, 100%, 60%);
+  animation-delay: 300ms;
+  fill: hsl(30, 100%, 50%);
 }
 .loader svg {
   margin: auto;
@@ -219,7 +297,14 @@ body {
 }
 
 .content {
-  animation: content-appear 5s reverse;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: content-appear;
+  animation-delay: 5ms;
 }
 
 .exploration {
@@ -550,17 +635,17 @@ body {
   position: relative;
 }
 .menu__content .appear__plats-1 {
-  animation: menu-appear 500ms 200ms;
+  animation: menu-appear 3s 500ms;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
 .menu__content .appear__plats-2 {
-  animation: menu-appear 500ms 400ms;
+  animation: menu-appear 3s 1000ms;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
 .menu__content .appear__plats-3 {
-  animation: menu-appear 500ms 600ms;
+  animation: menu-appear 3s 1500ms;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
@@ -664,15 +749,16 @@ body {
   transform: rotate(360deg);
 }
 .menu .entrees__liste .lien:hover .entree__prix, .menu .entrees__liste .lien:hover .plats__prix, .menu .entrees__liste .lien:hover .desserts__prix, .menu .plats__liste .lien:hover .entree__prix, .menu .plats__liste .lien:hover .plats__prix, .menu .plats__liste .lien:hover .desserts__prix, .menu .desserts__liste .lien:hover .entree__prix, .menu .desserts__liste .lien:hover .plats__prix, .menu .desserts__liste .lien:hover .desserts__prix {
-  margin-right: 60px;
+  width: calc(10% + 60px);
+  transition: width 250ms;
 }
 .menu .entrees__liste .lien:hover p, .menu .plats__liste .lien:hover p, .menu .desserts__liste .lien:hover p {
-  width: 50%;
-  transition: width 1000ms;
+  width: calc(90% - 60px);
+  transition: width 250ms;
 }
 .menu .entrees__liste .lien:hover .entree__titre, .menu .entrees__liste .lien:hover .plats__titre, .menu .entrees__liste .lien:hover .desserts__titre, .menu .plats__liste .lien:hover .entree__titre, .menu .plats__liste .lien:hover .plats__titre, .menu .plats__liste .lien:hover .desserts__titre, .menu .desserts__liste .lien:hover .entree__titre, .menu .desserts__liste .lien:hover .plats__titre, .menu .desserts__liste .lien:hover .desserts__titre {
   margin-right: 30%;
-  transition: margin-right 1000ms;
+  transition: margin-right 250ms;
 }
 .menu .entrees__liste .lien .entree__titre,
 .menu .entrees__liste .lien .plats__titre,
@@ -703,6 +789,7 @@ body {
   white-space: nowrap; /* Empêche le texte de passer à la ligne */
   text-overflow: ellipsis; /* Ajoute les points de suspension */
   font-size: 0.8rem;
+  transition: width 250ms;
 }
 .menu .entrees__liste .lien .entree__prix,
 .menu .entrees__liste .lien .plats__prix,
@@ -720,8 +807,7 @@ body {
   white-space: nowrap; /* Empêche le texte de passer à la ligne */
   overflow: hidden; /* Cache le texte qui dépasse de la boîte */
   text-overflow: ellipsis; /* Ajoute les points de suspension */
-  margin-right: 0;
-  transition: margin-right 1000ms;
+  transition: width 250ms;
 }
 @media (min-width: 1121px) {
   .menu .entrees__liste .lien .entree__prix,
@@ -746,14 +832,14 @@ body {
   padding-left: 10px;
   right: -60px;
   opacity: 1;
-  transition: right 1000ms ease-in-out;
+  transition: right 250ms ease-in-out;
 }
 .menu .entrees__liste .lien .fa-circle-check, .menu .plats__liste .lien .fa-circle-check, .menu .desserts__liste .lien .fa-circle-check {
   border-radius: 50%;
   color: #fff;
   background-color: #99e2d0;
   font-size: 2rem;
-  transition: transform 1000ms ease-in-out;
+  transition: transform 250ms ease-in-out;
   transform: rotate(0);
 }
 .menu .commander__button {
@@ -942,15 +1028,16 @@ body {
   transform: rotate(360deg);
 }
 .menu .entrees__liste .lien:hover .entree__prix, .menu .entrees__liste .lien:hover .plats__prix, .menu .entrees__liste .lien:hover .desserts__prix, .menu .plats__liste .lien:hover .entree__prix, .menu .plats__liste .lien:hover .plats__prix, .menu .plats__liste .lien:hover .desserts__prix, .menu .desserts__liste .lien:hover .entree__prix, .menu .desserts__liste .lien:hover .plats__prix, .menu .desserts__liste .lien:hover .desserts__prix {
-  margin-right: 60px;
+  width: calc(10% + 60px);
+  transition: width 250ms;
 }
 .menu .entrees__liste .lien:hover p, .menu .plats__liste .lien:hover p, .menu .desserts__liste .lien:hover p {
-  width: 50%;
-  transition: width 1000ms;
+  width: calc(90% - 60px);
+  transition: width 250ms;
 }
 .menu .entrees__liste .lien:hover .entree__titre, .menu .entrees__liste .lien:hover .plats__titre, .menu .entrees__liste .lien:hover .desserts__titre, .menu .plats__liste .lien:hover .entree__titre, .menu .plats__liste .lien:hover .plats__titre, .menu .plats__liste .lien:hover .desserts__titre, .menu .desserts__liste .lien:hover .entree__titre, .menu .desserts__liste .lien:hover .plats__titre, .menu .desserts__liste .lien:hover .desserts__titre {
   margin-right: 30%;
-  transition: margin-right 1000ms;
+  transition: margin-right 250ms;
 }
 .menu .entrees__liste .lien .entree__titre,
 .menu .entrees__liste .lien .plats__titre,
@@ -981,6 +1068,7 @@ body {
   white-space: nowrap; /* Empêche le texte de passer à la ligne */
   text-overflow: ellipsis; /* Ajoute les points de suspension */
   font-size: 0.8rem;
+  transition: width 250ms;
 }
 .menu .entrees__liste .lien .entree__prix,
 .menu .entrees__liste .lien .plats__prix,
@@ -998,8 +1086,7 @@ body {
   white-space: nowrap; /* Empêche le texte de passer à la ligne */
   overflow: hidden; /* Cache le texte qui dépasse de la boîte */
   text-overflow: ellipsis; /* Ajoute les points de suspension */
-  margin-right: 0;
-  transition: margin-right 1000ms ease-in-out;
+  transition: width 250ms;
 }
 @media (min-width: 1121px) {
   .menu .entrees__liste .lien .entree__prix,
@@ -1017,21 +1104,21 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 50px;
+  width: 60px;
   background-color: #99e2d0;
   position: absolute;
   top: 0px;
   padding-left: 10px;
   right: -60px;
   opacity: 1;
-  transition: right 1000ms ease-in-out;
+  transition: right 250ms ease-in-out;
 }
 .menu .entrees__liste .lien .fa-circle-check, .menu .plats__liste .lien .fa-circle-check, .menu .desserts__liste .lien .fa-circle-check {
   border-radius: 50%;
   color: #fff;
   background-color: #99e2d0;
   font-size: 2rem;
-  transition: transform 1000ms ease-in-out;
+  transition: transform 250ms ease-in-out;
   transform: rotate(0);
 }
 .menu .commander__button {
@@ -1220,15 +1307,16 @@ body {
   transform: rotate(360deg);
 }
 .menu .entrees__liste .lien:hover .entree__prix, .menu .entrees__liste .lien:hover .plats__prix, .menu .entrees__liste .lien:hover .desserts__prix, .menu .plats__liste .lien:hover .entree__prix, .menu .plats__liste .lien:hover .plats__prix, .menu .plats__liste .lien:hover .desserts__prix, .menu .desserts__liste .lien:hover .entree__prix, .menu .desserts__liste .lien:hover .plats__prix, .menu .desserts__liste .lien:hover .desserts__prix {
-  margin-right: 60px;
+  width: calc(10% + 60px);
+  transition: width 250ms;
 }
 .menu .entrees__liste .lien:hover p, .menu .plats__liste .lien:hover p, .menu .desserts__liste .lien:hover p {
-  width: 50%;
-  transition: width 1000ms;
+  width: calc(90% - 60px);
+  transition: width 250ms;
 }
 .menu .entrees__liste .lien:hover .entree__titre, .menu .entrees__liste .lien:hover .plats__titre, .menu .entrees__liste .lien:hover .desserts__titre, .menu .plats__liste .lien:hover .entree__titre, .menu .plats__liste .lien:hover .plats__titre, .menu .plats__liste .lien:hover .desserts__titre, .menu .desserts__liste .lien:hover .entree__titre, .menu .desserts__liste .lien:hover .plats__titre, .menu .desserts__liste .lien:hover .desserts__titre {
   margin-right: 30%;
-  transition: margin-right 1000ms;
+  transition: margin-right 250ms;
 }
 .menu .entrees__liste .lien .entree__titre,
 .menu .entrees__liste .lien .plats__titre,
@@ -1259,6 +1347,7 @@ body {
   white-space: nowrap; /* Empêche le texte de passer à la ligne */
   text-overflow: ellipsis; /* Ajoute les points de suspension */
   font-size: 0.8rem;
+  transition: width 250ms;
 }
 .menu .entrees__liste .lien .entree__prix,
 .menu .entrees__liste .lien .plats__prix,
@@ -1276,8 +1365,7 @@ body {
   white-space: nowrap; /* Empêche le texte de passer à la ligne */
   overflow: hidden; /* Cache le texte qui dépasse de la boîte */
   text-overflow: ellipsis; /* Ajoute les points de suspension */
-  margin-right: 0;
-  transition: margin-right 1000ms;
+  transition: width 250ms;
 }
 @media (min-width: 1121px) {
   .menu .entrees__liste .lien .entree__prix,
@@ -1302,14 +1390,14 @@ body {
   padding-left: 10px;
   right: -60px;
   opacity: 1;
-  transition: right 1000ms ease-in-out;
+  transition: right 250ms ease-in-out;
 }
 .menu .entrees__liste .lien .fa-circle-check, .menu .plats__liste .lien .fa-circle-check, .menu .desserts__liste .lien .fa-circle-check {
   border-radius: 50%;
   color: #fff;
   background-color: #99e2d0;
   font-size: 2rem;
-  transition: transform 1000ms ease-in-out;
+  transition: transform 250ms ease-in-out;
   transform: rotate(0);
 }
 .menu .commander__button {
@@ -1498,15 +1586,16 @@ body {
   transform: rotate(360deg);
 }
 .menu .entrees__liste .lien:hover .entree__prix, .menu .entrees__liste .lien:hover .plats__prix, .menu .entrees__liste .lien:hover .desserts__prix, .menu .plats__liste .lien:hover .entree__prix, .menu .plats__liste .lien:hover .plats__prix, .menu .plats__liste .lien:hover .desserts__prix, .menu .desserts__liste .lien:hover .entree__prix, .menu .desserts__liste .lien:hover .plats__prix, .menu .desserts__liste .lien:hover .desserts__prix {
-  margin-right: 60px;
+  width: calc(10% + 60px);
+  transition: width 250ms;
 }
 .menu .entrees__liste .lien:hover p, .menu .plats__liste .lien:hover p, .menu .desserts__liste .lien:hover p {
-  width: 50%;
-  transition: width 1000ms;
+  width: calc(90% - 60px);
+  transition: width 250ms;
 }
 .menu .entrees__liste .lien:hover .entree__titre, .menu .entrees__liste .lien:hover .plats__titre, .menu .entrees__liste .lien:hover .desserts__titre, .menu .plats__liste .lien:hover .entree__titre, .menu .plats__liste .lien:hover .plats__titre, .menu .plats__liste .lien:hover .desserts__titre, .menu .desserts__liste .lien:hover .entree__titre, .menu .desserts__liste .lien:hover .plats__titre, .menu .desserts__liste .lien:hover .desserts__titre {
   margin-right: 30%;
-  transition: margin-right 1000ms;
+  transition: margin-right 250ms;
 }
 .menu .entrees__liste .lien .entree__titre,
 .menu .entrees__liste .lien .plats__titre,
@@ -1537,6 +1626,7 @@ body {
   white-space: nowrap; /* Empêche le texte de passer à la ligne */
   text-overflow: ellipsis; /* Ajoute les points de suspension */
   font-size: 0.8rem;
+  transition: width 250ms;
 }
 .menu .entrees__liste .lien .entree__prix,
 .menu .entrees__liste .lien .plats__prix,
@@ -1554,8 +1644,7 @@ body {
   white-space: nowrap; /* Empêche le texte de passer à la ligne */
   overflow: hidden; /* Cache le texte qui dépasse de la boîte */
   text-overflow: ellipsis; /* Ajoute les points de suspension */
-  margin-right: 0;
-  transition: margin-right 1000ms;
+  transition: width 250ms;
 }
 @media (min-width: 1121px) {
   .menu .entrees__liste .lien .entree__prix,
@@ -1580,14 +1669,14 @@ body {
   padding-left: 10px;
   right: -60px;
   opacity: 1;
-  transition: right 1000ms ease-in-out;
+  transition: right 250ms ease-in-out;
 }
 .menu .entrees__liste .lien .fa-circle-check, .menu .plats__liste .lien .fa-circle-check, .menu .desserts__liste .lien .fa-circle-check {
   border-radius: 50%;
   color: #fff;
   background-color: #99e2d0;
   font-size: 2rem;
-  transition: transform 1000ms ease-in-out;
+  transition: transform 250ms ease-in-out;
   transform: rotate(0);
 }
 .menu .commander__button {
