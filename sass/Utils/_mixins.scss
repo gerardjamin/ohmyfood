@@ -3,7 +3,6 @@
   font-family: "Roboto", sans-serif;
   color: black;
 }
-//@include Roboto;
 
 @mixin Shrikhand {
   font-family: "Shrikhand", cursive;
@@ -40,42 +39,4 @@
   }
 }
 
-@mixin heart {
 
-  .card__heart {
-    position: relative;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 20px;
-    background-color: transparent;
-    border:1px solid black;
-    border-right: none;
-    
-   
-    border-radius: 20px 20px 0 0;
-    transform: rotate(-45deg);
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 20px;
-    background-color: transparent;
-    border:1px solid black;
-    border-left: none;
-    border-radius: 20px 20px 0 0;
-    transform: rotate(45deg);
-  }
-
-  &::before {
-    left: 0;
-  }
-
-  &::after {
-    left: 8px;
-  }
-}
