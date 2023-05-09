@@ -4,10 +4,10 @@
   animation-timing-function: ease;
     animation-delay: 0s;
     animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
+    animation-direction: alternate-reverse;
+    animation-fill-mode:none;
     animation-play-state: running;
-    animation-name: content-appear;
+    animation-name: loader-appear;
     animation-delay: 5ms;
 }
 .exploration {
