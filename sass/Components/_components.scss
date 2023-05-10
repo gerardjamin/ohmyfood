@@ -1,12 +1,14 @@
+// body {
+//   position: relative;
+// }
+
 .loader {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
   background-color: rgba(#fff, 0.95);
   animation-duration: 1s;
     animation-timing-function: ease;
