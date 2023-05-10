@@ -84,6 +84,7 @@ td, th {
   position: fixed;
   height: 100%;
   width: 100%;
+  top: -100px;
   background-color: rgba(255, 255, 255, 0.95);
   animation-duration: 1s;
   animation-timing-function: ease;
