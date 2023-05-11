@@ -5,7 +5,8 @@
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: hsl(70%,100%,50%);
+  background-color: #ff00ff;
+  opacity:0.9;
   animation-play-state: running;
   animation: loader-appear 1s ease 3s 1 normal both;
 
