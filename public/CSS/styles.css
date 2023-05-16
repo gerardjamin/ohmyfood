@@ -183,7 +183,7 @@ body {
   height: 186px;
   background: #353535;
 }
-@media (min-width: 1121px) {
+@media (min-width: 768px) {
   .footer {
     flex-direction: row-reverse;
     align-items: flex-end;
@@ -210,7 +210,7 @@ body {
   color: white;
   text-decoration: none;
 }
-@media (min-width: 1121px) {
+@media (min-width: 768px) {
   .footer .footer-list {
     flex-direction: row;
   }

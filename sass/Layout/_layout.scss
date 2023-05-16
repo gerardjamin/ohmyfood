@@ -59,7 +59,7 @@ body {
   height: 186px;
   background: $background-black;
 
-  @media (min-width: 1121px) {
+  @media (min-width: 768px) {
     flex-direction: row-reverse;
     align-items: flex-end;
     padding-bottom: 20px;
@@ -88,7 +88,7 @@ body {
       text-decoration: none;
     }
 
-    @media (min-width: 1121px) {
+    @media (min-width: 768px) {
       flex-direction: row;
       & .devenir-partenaire {
         padding-right: 55px;
