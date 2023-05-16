@@ -40,8 +40,8 @@ body {
     z-index: 1;
   }
 
-  &__content { 
-    top:-68px;
+  &__content {
+    top: -68px;
     width: 100%;
     background-color: $background-grey;
     border-top-left-radius: 32px;
@@ -184,8 +184,8 @@ body {
 
       &:hover .icone {
         //transition evenement
-        right: 0px;
         opacity: 1;
+        right: 0px;
       }
 
       &:hover .fa-circle-check {
@@ -270,15 +270,15 @@ body {
         right: -60px;
         padding-left: 10px;
         //transition before
-        transition: right 250ms ease-in-out;
-      }
+        transition: right 500ms ease-in-out;
 
-      & .fa-circle-check {
-        color: #fff;
-        font-size: 2rem;
-        //transition before
-        transition: transform 250ms ease-in-out;
-        transform: rotate(0);
+        & .fa-circle-check {
+          color: #fff;
+          font-size: 2rem;
+          //transition before
+          transition: transform 500ms ease-in-out;
+          transform: rotate(360 deg);
+        }
       }
     }
   }
