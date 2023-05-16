@@ -165,8 +165,8 @@ body {
 
       &:hover .icone {
         //transition evenement
-        right: 0px;
         opacity: 1;
+        right: 0px;
       }
 
       &:hover .fa-circle-check {
@@ -248,21 +248,18 @@ body {
         background-color: #99e2d0;
         position: absolute;
         top: 0px;
+        right: -60px;
         padding-left: 10px;
         //transition before
-        right: -60px;
-        opacity: 1;
-        transition: right 250ms ease-in-out;
-      }
+        transition: right 2s ease-in-out;
 
-      & .fa-circle-check {
-        border-radius: 50%;
-        color: #fff;
-        background-color: #99e2d0;
-        font-size: 2rem;
-        //transition before
-        transition: transform 250ms ease-in-out;
-        transform: rotate(0);
+        & .fa-circle-check {
+          color: #fff;
+          font-size: 2rem;
+          //transition before
+          transition: transform 2s ease-in-out;
+          transform: rotate(360 deg);
+        }
       }
     }
   }

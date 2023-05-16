@@ -40,8 +40,8 @@ body {
     z-index: 1;
   }
 
-  &__content { 
-    top:-68px;
+  &__content {
+    top: -68px;
     width: 100%;
     background-color: $background-grey;
     border-top-left-radius: 32px;
@@ -178,15 +178,14 @@ body {
       border-radius: 15px;
       box-shadow: 2px 2px 5px 2px $background-grey;
       background-color: $background-white;
-
       position: relative;
       overflow: hidden;
       text-decoration: none;
 
       &:hover .icone {
         //transition evenement
-        right: 0px;
         opacity: 1;
+        right: 0px;
       }
 
       &:hover .fa-circle-check {
@@ -258,7 +257,7 @@ body {
         //transition before
         transition: width 250ms;
       }
-
+      //coche
       & .icone {
         display: flex;
         justify-content: center;
@@ -268,21 +267,18 @@ body {
         background-color: #99e2d0;
         position: absolute;
         top: 0px;
+        right: -60px;
         padding-left: 10px;
         //transition before
-        right: -60px;
-        opacity: 0;
-        transition: right 250ms ease-in-out;
-      }
+        transition: right 500ms ease-in-out;
 
-      & .fa-circle-check {
-        border-radius: 50%;
-        color: #fff;
-        background-color: #99e2d0;
-        font-size: 2rem;
-        //transition before
-        transition: transform 250ms ease-in-out;
-        transform: rotate(0);
+        & .fa-circle-check {
+          color: #fff;
+          font-size: 2rem;
+          //transition before
+          transition: transform 500ms ease-in-out;
+          transform: rotate(360 deg);
+        }
       }
     }
   }
