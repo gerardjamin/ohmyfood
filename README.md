@@ -1,10 +1,10 @@
 
 # Création du site Ohmyfood
 **Description de la mission:**
-Ma mission est de développer un site **mobile first** qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée.   
+Ma mission est de développer un sîte **mobile first** qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas à distance pour que les plats soient prêts à leur arrivée.   
 
 ### développé avec CSS3 & HTML5
-*Le code comprend:* 
+*Le code comprend aussi* 
 * L' utilisation du compilateur SASS avec la structure 7.1   
 * Le développement d'annimations CSS pour rendre le sîte plus attractif 
 
@@ -21,7 +21,7 @@ Ma mission est de développer un site **mobile first** qui répertorie les menus
   [Mon sîte ohmyfood](https://gerardjamin.github.io/ohmyfood/ "ohmyfood.com")  
 
 ### Auteur  
-Gerard Jamin  
+Gérard Jamin  
 
 ### Licence  
 Open source  
