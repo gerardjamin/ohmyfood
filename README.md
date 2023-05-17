@@ -1,7 +1,7 @@
 
 # Création du site Ohmyfood
 ###Description de la mission:
-Ma mission est de développer un site --mobile first-- qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée.   
+Ma mission est de développer un site --mobile first-- qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas a distance pour que les plats soient prêts à leur arrivée.   
 
 ### Elaboré avec CSS3 & HTML5 
 * Utilisation du compilateur SASS avec la structure 7.1   
