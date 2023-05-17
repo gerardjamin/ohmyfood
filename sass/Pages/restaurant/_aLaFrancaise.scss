@@ -183,8 +183,7 @@ body {
       text-decoration: none;
 
       &:hover .icone {
-        //transition evenement
-        opacity: 1;
+        //transition à l'intérieur du parent
         right: 0px;
       }
 
@@ -257,27 +256,30 @@ body {
         //transition before
         transition: width 250ms;
       }
-      //coche
+      //animation de la coche
       & .icone {
         display: flex;
         justify-content: center;
         align-items: center;
+        //hauteur et largeur du selecteur
         height: 100%;
         width: 60px;
         background-color: #99e2d0;
         position: absolute;
+        //positionné en haut et à l'exterieur du parent
         top: 0px;
         right: -60px;
         padding-left: 10px;
-        //transition before
+        //transition 
         transition: right 500ms ease-in-out;
 
         & .fa-circle-check {
           color: #fff;
           font-size: 2rem;
           //transition before
-          transition: transform 500ms ease-in-out;
           transform: rotate(360 deg);
+          transition: transform 500ms ease-in-out;
+          
         }
       }
     }
